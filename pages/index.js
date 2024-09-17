@@ -4,17 +4,17 @@ import partnerships from '../components/sources.json';
 import features from '../components/features.json';
 
 const reportItems = [
-    { name: 'Restaurants', checked: true },
-    { name: 'Events', checked: true },
-    { name: 'Accommodation', checked: false },
-    { name: 'Museums', checked: false },
+    { name: '😋 Restaurants', checked: true },
+    { name: '🥳 Events', checked: true },
+    { name: '😴 Accommodation', checked: false },
+    { name: '😴 Museums', checked: false },
     { name: 'Safety', checked: false },
     { name: 'Health', checked: false },
     { name: 'Shopping', checked: false },
     { name: 'Around', checked: false },
     { name: 'Attractions', checked: false },
     { name: 'Transportation', checked: false },
-    { name: 'Nightlife', checked: false },
+    { name: '🥳 Nightlife', checked: false },
     { name: 'Wellness', checked: false }
 ];
 
@@ -44,7 +44,7 @@ function Home() {
       <Layout>
       <section id="top-view" className="h-[400px] lg:h-[900px] pt-8 pb-2 -mt-8 lg:-mt-36">
         <div className="bg-gradient-to-r from-teal-50 via-amber-50 to-purple-50 w-full h-full top-0 left-0">
-            <div className="container mx-auto lg:pt-24 max-w-4xl mx-auto flex justify-center">
+            <div className="max-w-4xl mx-auto lg:pt-24 max-w-4xl mx-auto flex justify-center">
             <div className="pt-10 px-4 text-center">
                 <div className="text-4xl lg:text-8xl text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
                 🛫
