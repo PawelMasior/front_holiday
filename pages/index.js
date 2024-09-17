@@ -8,14 +8,14 @@ const reportItems = [
     { name: '🥳 Events', checked: true },
     { name: '😴 Accommodation', checked: false },
     { name: '😴 Museums', checked: false },
-    { name: 'Safety', checked: false },
-    { name: 'Health', checked: false },
-    { name: 'Shopping', checked: false },
-    { name: 'Around', checked: false },
-    { name: 'Attractions', checked: false },
-    { name: 'Transportation', checked: false },
-    { name: '🥳 Nightlife', checked: false },
-    { name: 'Wellness', checked: false }
+    // { name: 'Safety', checked: false },
+    // { name: 'Health', checked: false },
+    // { name: 'Shopping', checked: false },
+    // { name: 'Around', checked: false },
+    // { name: 'Attractions', checked: false },
+    // { name: 'Transportation', checked: false },
+    // { name: '🥳 Nightlife', checked: false },
+    // { name: 'Wellness', checked: false }
 ];
 
 function Home() {
@@ -148,7 +148,16 @@ function Home() {
             </div>
         </div>
         </section>
-
+        <section id="ABOUT" className={"pt-20 pb-10 overflow-x-hidden"}>
+            <div className={"container mx-auto"}>
+                <div className="pt-4 center">
+                    <a className="px-10 py-2 text-2xl rounded-lg text-stone-700 font-bold">
+                    💥 Our AI solution will prepare a comprehensive to-do information just for you! 
+                    Our AI will review available internet sources
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <section id="key-features" className={"pt-20 pb-10 overflow-x-hidden"}>
           <div className={"container mx-auto"}>
@@ -198,7 +207,7 @@ function Home() {
               <div className="flex flex-wrap items-center px-2">
                 {partnerships.map((item, index) => (
                   <div key={index} className="flex flex-wrap items-center">
-                    <a href={item.href} className="pb-2 flex flex-col items-center">
+                    <a href={item.href} className="pb-4 flex flex-col items-center">
                       <img
                         style={{ height: `30px` }}
                         className="block lg:hidden px-2 py-2"
@@ -216,6 +225,9 @@ function Home() {
                 ))}
               </div>
             </div>
+              <p className={"pb-8 text-right text-lg lg:text-2xl text-stone-800 wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
+               ... and much more.
+              </p>               
           </div>
         </section>
       </Layout>
