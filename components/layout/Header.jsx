@@ -24,7 +24,7 @@ const Header = ({ handleHidden }) => {
                 <nav className="bg-transparent flex justify-between items-center py-3">
                     <Link href="/">
                         <a className="pr-4 lg:pr-0 text-3xl font-semibold leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
-                            <p className="text-stone-700">
+                            <p className="text-stone-900">
                             🧭 Holiday Planner
                             </p>
                         </a>
@@ -35,16 +35,6 @@ const Header = ({ handleHidden }) => {
                                 <a className="text-lg font-semibold text-slate-800 hover:text-blueGray-500 duration-500">About Us</a>
                             </Link>
                             <ul className="drop-down-menu min-w-200">
-                                {/* <li>
-                                    <Link href="/about-team">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Team</a>
-                                    </Link>
-                                </li> */}
-                                {/* <li>
-                                    <Link href="/about-team#values">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Our Values</a>
-                                    </Link>
-                                </li> */}
                                 <li>
                                     <Link href="/contact">
                                         <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
