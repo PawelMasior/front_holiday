@@ -1,0 +1,140 @@
+.slajder {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.zoom {
+  display: inline-block;
+  position: relative;
+  margin: 50px 10px;
+  padding: 1em 0;
+  background-color:#000000;
+  transition: transform .25s; /* Animation */
+  height: auto;
+  margin: 0 0;
+}
+
+.zoom:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.aside {
+  display: inline-block;
+  position:relative;
+  margin: 13px 0px;
+  padding: 0px 0;
+  font: bold 12px Poppins;
+  height: auto;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  background: #292929;
+  color:#c5a47e;
+  writing-mode:vertical-lr;
+  transform: rotate(-180deg);
+}
+
+.aside2 {
+  display: inline-block;
+  color:#292929;
+  padding-left: 47px;
+  margin: 0 0;
+}
+
+.socialmedia {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.about1 {
+  color: #c5a47e;
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about2 {
+  color: #000000;
+  font-family: Poppins, sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 35px;
+}
+
+.about_desc1 {
+  color: #c5a47e;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 23px;;
+}
+
+.about_desc2 {
+  color: #999999;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 23px;
+  max-width: 300px;
+}
+
+.about_desc3 {
+  color: #c5a47e;
+  font-family: Oswald, sans-serif;
+  font-size: 120px;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 120px;
+  justify-content: left;
+}
+
+.about_desc4 {
+  color: #c5a47e;
+  font-family: Oswald, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0px 20px;
+}
+.about_desc5 {
+  color: #ffffff;
+  font-family: Oswald, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  /* line-height: 120px; */
+  max-width: 30em;
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.desc_row_item1 {
+  display: inline-block;
+  border-top: 1px solid #c5a47e;
+  padding: 16.8em 0em;
+  width: 7rem;
+  margin-right: 1.5rem;
+}
+
+.desc_row_item2 {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+.desc_row_item3 {
+  /* display: inline-block; */
+  /* padding-left: 10em; */
+  transition: transform .25s; /* Animation */
+}
+.desc_row_item3:hover {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

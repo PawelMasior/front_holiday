@@ -1,0 +1,34 @@
+[
+  {
+      "src": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+      "href": "https://www.google.com/"
+  },
+  {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+      "href": "https://openai.com/"
+  },
+  {
+      "src": "https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg",
+      "href": "https://en.wikipedia.org"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Booking.com_logo.svg",
+    "href": "https://www.booking.com/"
+  },
+  {
+    "src": "https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg",
+    "href": "https://www.tripadvisor.com/"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Yelp_Logo.svg",
+    "href": "https://www.yelp.com/"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
+    "href": "https://www.airbnb.com/"
+  },
+  {
+    "src": "https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2&6f9ec7db",
+    "href": "https://www.expedia.com/"
+  }
+]
