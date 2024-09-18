@@ -44,7 +44,7 @@ const Header = ({ handleHidden }) => {
                         </li>
                         <li className="pt-4 pb-4">
                             <Link href="/contact">
-                                <a className="btn-contact hover-up-2 text-base duration-500 border border-slate-500 px-4 py-2 rounded">Login</a>
+                                <a className="btn-contact bg-blue-500 text-white hover-up-2 text-base duration-500 border border-slate-500 px-4 py-2 rounded">Login</a>
                             </Link>
                         </li>
                     </ul>
