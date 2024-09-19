@@ -40,6 +40,16 @@ const Header = ({ handleHidden }) => {
                                         <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link href="/contact">
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact">
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
+                                    </Link>
+                                </li>
                             </ul>
                         </li>
                         <li className="pt-4 pb-4">
