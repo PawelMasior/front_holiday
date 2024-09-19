@@ -23,7 +23,7 @@ const Footer = () => {
                                 <div className={"pr-4 lg:pr-0 text-3xl font-semibold"}>
                                     {/* <img src="/assets/imgs/logos/logo_grey.svg" alt="site logo" width={200}/> */}
                                     <p className="text-stone-700">
-                            🧭 Holiday Planner
+                            🧭 My Holiday Planner
                             </p>
                                 </div>
                             </div>

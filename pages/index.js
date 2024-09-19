@@ -32,7 +32,8 @@ const reportPref = [
   { "name": '🛶 Eco-friendly', "checked": false, "dependent": ['all'] },
   { "name": '💻 Digital nomad', "checked": false, "dependent": ['all'] },
   { "name": '👪 Family friendly', "checked": false, "dependent": ['all'] },
-  { "name": '👩‍❤️‍👨 Romantic', "checked": false, "dependent": ['all'] }
+  { "name": '👩‍❤️‍👨 Romantic', "checked": false, "dependent": ['all'] },
+  { "name": '🚲 Biking', "checked": false, "dependent": ['all'] }
 ];
 
 
@@ -115,13 +116,13 @@ function Home() {
                     </div>
 
                       <div className="my-6">
-                          <p className="pb-1 text-base font-bold text-left">Include in report:</p>
+                          <p className="pb-1 text-base font-bold text-left">My Interests :</p>
                           <div className="flex flex-wrap justify-left gap-2">
                             {items.map((item, index) => (
                                 <button key={item.name} onClick={() => toggleReportItem(item.name)}
                                 className={`px-3 py-1 wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg ${item.checked 
-                                  ? 'bg-stone-700  border-2 border-stone-950 text-white shadow-amber-50' 
-                                  : 'bg-stone-50 border-2 border-stone-400 text-black shadow-stone-100'}`}>
+                                  ? 'bg-stone-700  border-2 border-stone-950 text-white' 
+                                  : 'bg-stone-50 border-2 border-stone-400 text-black '}`}>
                                 {item.name}
                                 </button>
                             ))}
@@ -130,7 +131,7 @@ function Home() {
                   </div>
                 </div>
                     <div className="mt-6">
-                        <p className="pb-1 text-base font-bold text-left">My preferences:</p>
+                        <p className="pb-1 text-base font-bold text-left">My Preferences:</p>
                         <div className="flex flex-wrap justify-left gap-2">
                             {reportPref.map((preference) => (
                                 <button
@@ -139,29 +140,30 @@ function Home() {
                                     className={`px-3 py-1 wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg ${
                                         selectedPreferences.includes(preference.name) || preference.checked
                                         ? 'bg-stone-700  border-2 border-stone-950 text-white' 
-                                        : 'bg-stone-50 border-2 border-blue-400 text-black '}`}>
+                                        : 'bg-stone-50 border-2 border-teal-400 text-black '}`}>
                                     {preference.name}
                                 </button>
                             ))}
                         </div>
                         <div className="pt-2 flex items-center">
-                        <input
-                          type="checkbox"
-                          id="savePreferences"
-                          className="h-4 w-4 text-red-500 border-gray-300 rounded focus:ring-red-400"
-                          defaultChecked
-                        />
-                        <label htmlFor="savePreferences" className="pt-1 pl-1 text-sm text-stone-800">
-                          Automatically save my preferences
-                        </label>
-                      </div>
+                          <input
+                            type="checkbox"
+                            id="savePreferences"
+                            className="h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900"
+                            defaultChecked
+                          />
+                          <label htmlFor="savePreferences" className="pt-1 pl-1 text-sm">
+                            Save My Interests & Preferences
+                          </label>
+                        </div>
                     </div>
-                    <div className="flex flex-col items-end">
-                      <div className="wow animate__animated animate__fadeIn animated hover-up-2 duration-500 ">
-                        <button className="px-4 py-2 bg-blue-500 hover:bg-blue-100 text-lg font-bold text-white rounded-md mb-8 duration-500">
-                          Get Report
-                        </button>
-                      </div>
+
+                    <div className="pt-1 flex flex-col items-end">
+                      <a href="#" className="px-4 py-1 bg-white border-2 border-blue-500 rounded-lg wow animate__animated animate__fadeIn animated hover-up-2 duration-500 ">
+                        <p className="text-stone-900 text-lg font-bold">
+                        🚀 Go!
+                        </p>
+                      </a>
                     </div>
                   </div>
               </div>
@@ -169,34 +171,13 @@ function Home() {
           </div>
         </section>
 
-        {/* <section id="solution" className="pt-20 pb-10" >
-          <div className="container mx-auto text-center">
-            <h1 className="px-6 py-4 text-2xl font-bold text-stone-900">
-            🧭 Holiday Planner creates your personalized travel option list.
-            </h1>
-            <p className="px-6 py-4 text-xl text-stone-900">
-              💥 Our AI-driven solution creates a a report with to-do list: as you wish 
-              Our AI-driven solution analyzes real-time data from various sources, our AI helps you stay
-              updated and make the most of your travels.
-            </p>
-            <p className="px-6 py-4 text-3xl font-bold text-stone-700">
-              Some examples of what Holiday Planner can do:
-            </p>
-            <ul className="text-lg text-stone-700 font-medium list-disc list-inside max-w-xl mx-auto mt-6 space-y-4">
-              <li>Check for local holidays and plan accordingly</li>
-              <li>Adjust plans based on the latest weather forecasts</li>
-              <li>Instantly check museum hours and availability</li>
-            </ul>
-          </div>
-        </section> */}
-
         <section id="key-features" className={"pt-20 pb-10 overflow-x-hidden"}>
           <div className={"container mx-auto"}>
             <div className={"flex flex-wrap lg:flex-nowrap"}>
               <div className={"w-full lg:w-3/5"}>
 
                 <h1 className="pt-4 text-2xl font-bold text-stone-900">
-                  🧭 Holiday Planner creates your own travel option list.
+                  🧭 My Holiday Planner creates your own travel option list.
                 </h1>
                 <p className="pt-4 text-xl text-stone-900">
                   Our AI-driven solution reviews real-time internet data to create a report up to your preferences.
@@ -211,8 +192,6 @@ function Home() {
                         </p>
                     ))}
                 </div>
-
-
                 <div className="pt-10">
                     <a className="px-10 py-2 bg-stone-100 bg-opacity-30 border-stone-400 border-2 rounded-lg text-stone-700 font-bold">
                     💥 Get 2 months free with yearly plan
