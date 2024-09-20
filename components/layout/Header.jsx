@@ -23,8 +23,8 @@ const Header = ({ handleHidden }) => {
             <div className="container bg-transparent">
                 <nav className="bg-transparent flex justify-between items-center py-3">
                     <Link href="/">
-                        <a className="pr-4 lg:pr-0 text-3xl font-semibold leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
-                            <p className="text-stone-900">
+                        <a className="leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
+                            <p className="lg:pr-0 lg:text-2xl text-lg font-semibold text-stone-900">
                             🧭 My Holiday Planner
                             </p>
                         </a>
@@ -54,7 +54,7 @@ const Header = ({ handleHidden }) => {
                         </li>
                         <li className="pt-4 pb-4">
                             <Link href="/contact">
-                                <a className="btn-contact bg-blue-500 text-white hover-up-2 text-base duration-500 border border-slate-500 px-4 py-2 rounded">🔐 Login</a>
+                                <a className="bg-blue-500 text-white hover-up-2 text-base duration-500 border-2 border-stone-950 px-4 py-2 rounded shadow-white shadow-lg">🔐 Login</a>
                             </Link>
                         </li>
                     </ul>
