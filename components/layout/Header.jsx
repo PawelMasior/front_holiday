@@ -54,7 +54,9 @@ const Header = ({ handleHidden }) => {
                         </li>
                         <li className="pt-4 pb-4">
                             <Link href="/contact">
-                                <a className=" bg-gradient-to-tr from-blue-600 via-blue-500 to-blue-400 text-white hover-up-2 text-base duration-500 border-2 border-stone-950 px-4 py-2 rounded shadow-white shadow-lg">🔐 Login</a>
+                                <a className=" bg-gradient-to-tr from-blue-600 via-blue-500 to-blue-400 text-white font-bold hover-up-2 text-base duration-500 border-2 border-stone-950 px-4 py-2 rounded shadow-white shadow-lg">
+                                    🔐 Login
+                                </a>
                             </Link>
                         </li>
                     </ul>

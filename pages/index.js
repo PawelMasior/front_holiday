@@ -216,7 +216,7 @@ function Home() {
                         className={`px-1 lg:px-3 py-1 text-xs lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg ${
                           preference.checked
                           ? 'bg-stone-700 border-2 border-stone-950 text-white' 
-                          : ' bg-stone-50 border-2 border-teal-400 text-black text-sm lg:text-base'}`}>
+                          : ' bg-stone-50 border-2 border-blue-500 text-black text-sm lg:text-base'}`}>
                         {preference.name}
                       </button>
                     ))}
