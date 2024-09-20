@@ -37,24 +37,24 @@ const Header = ({ handleHidden }) => {
                             <ul className="drop-down-menu min-w-200">
                                 <li>
                                     <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">placeholder_1</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">placeholder_2</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">Contact Us</a>
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">placeholder_3</a>
                                     </Link>
                                 </li>
                             </ul>
                         </li>
                         <li className="pt-4 pb-4">
                             <Link href="/contact">
-                                <a className="bg-blue-500 text-white hover-up-2 text-base duration-500 border-2 border-stone-950 px-4 py-2 rounded shadow-white shadow-lg">🔐 Login</a>
+                                <a className=" bg-gradient-to-tr from-blue-600 via-blue-500 to-blue-400 text-white hover-up-2 text-base duration-500 border-2 border-stone-950 px-4 py-2 rounded shadow-white shadow-lg">🔐 Login</a>
                             </Link>
                         </li>
                     </ul>
