@@ -56,7 +56,8 @@ const reportPref = [
 
 const Form = () => {
   const [hidden_1, setHiddenLocal_1] = useState(true);
-  const [hidden_2, setHiddenLocal_2] = useState(true);
+  // const [hidden_2, setHiddenLocal_2] = useState(true);
+  // const [hidden_1, setHiddenLocal_1] = useState(true);
 
   useEffect(() => {
     const today = new Date();
@@ -66,6 +67,15 @@ const Form = () => {
     document.getElementById('dateFrom').value = formatDate(today);
     document.getElementById('dateTo').value = formatDate(twoWeeksLater);
   }, []);
+
+  // Timer effect to change hidden_1 after 3 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setHiddenLocal_1(false); // Change to false after 3 seconds
+    }, 3000);
+    return () => clearTimeout(timer); // Cleanup timer on unmount
+  }, []);
+
 
   const [items, setItems] = useState(reportScope);
   const [preferences, setPreferences] = useState(reportPref);
@@ -151,11 +161,13 @@ const Form = () => {
 
       {/* Smoothly toggling content sections */}
       <div className="pt-6 w-full">
-        <button onClick={() => setHiddenLocal_1(!hidden_1)} className="flex flex-row items-center justify-between w-full text-stone-800 bg-transparent text-left">
+      <button onClick={() => setHiddenLocal_1(!hidden_1)} className="flex flex-row items-center justify-between w-full text-stone-800 bg-transparent text-left">
           <FiChevronRight className={`text-white bg-gradient-to-tr from-blue-700 via-blue-800 to-blue-600 rounded-full transition ease-in-out duration-500 transform ${hidden_1 
             ? 'rotate-0' : 'rotate-90'}`} style={{ fontSize: '30px' }} />
           <div className="w-full">
-            <p className="pl-2 text-stone-900 text-base lg:text-lg font-bold">Find me the best information on:</p>
+            <p className="pl-2 text-stone-900 text-base lg:text-lg font-bold">
+            Report the best information about:
+            </p>
           </div>
         </button>
         <div className={`lg:pl-8 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-screen opacity-100'}`}>
@@ -163,7 +175,7 @@ const Form = () => {
             <span className="flex items-center"> {/* Added margin-left for spacing */}
               <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
               <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base font-bold">
-                Save my choices:
+                Save my choices.
               </label>
             </span>
           </div>
@@ -179,10 +191,13 @@ const Form = () => {
           </div>
           <div className="lg:pl-0">
           <div className="pt-6 flex items-center">
+            {/* <p className="text-left text-stone-900 text-base lg:text-base font-bold">
+            ccccc
+            </p> */}
             <span className="flex items-center"> {/* Added margin-left for spacing */}
               <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
               <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base font-bold">
-                Save my preferences:
+                Save my preferences.
               </label>
             </span>
           </div>
