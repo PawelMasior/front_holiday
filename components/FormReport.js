@@ -166,7 +166,7 @@ const Form = () => {
             ? 'rotate-0' : 'rotate-90'}`} style={{ fontSize: '30px' }} />
           <div className="w-full">
             <p className="pl-2 text-stone-900 text-base lg:text-lg font-bold">
-            Report the best information about:
+            Report me the best information about:
             </p>
           </div>
         </button>

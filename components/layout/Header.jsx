@@ -37,17 +37,17 @@ const Header = ({ handleHidden }) => {
                             <ul className="drop-down-menu min-w-200">
                                 <li>
                                     <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">placeholder_1</a>
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">🗿 placeholder_1</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">placeholder_2</a>
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">🗿 placeholder_2</a>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">placeholder_3</a>
+                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">🗿 placeholder_3</a>
                                     </Link>
                                 </li>
                             </ul>
