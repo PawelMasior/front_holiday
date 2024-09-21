@@ -155,10 +155,18 @@ const Form = () => {
           <FiChevronRight className={`text-white bg-gradient-to-tr from-blue-700 via-blue-800 to-blue-600 rounded-full transition ease-in-out duration-500 transform ${hidden_1 
             ? 'rotate-0' : 'rotate-90'}`} style={{ fontSize: '30px' }} />
           <div className="w-full">
-            <p className="pl-2 text-stone-900 text-base lg:text-lg font-bold">Include in my plan me the best information on:</p>
+            <p className="pl-2 text-stone-900 text-base lg:text-lg font-bold">Find me the best information on:</p>
           </div>
         </button>
         <div className={`lg:pl-8 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-screen opacity-100'}`}>
+        <div className="pt-5 flex items-center">
+            <span className="flex items-center"> {/* Added margin-left for spacing */}
+              <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
+              <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base font-bold">
+                Save my choices:
+              </label>
+            </span>
+          </div>
           <div className="pt-2 flex flex-wrap justify-left lg:gap-2 gap-1">
             {items.map((item) => (
               <button key={item.name} onClick={() => toggleReportItem(item.name)}
