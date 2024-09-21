@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import partnerships from '../components/sources.json';
+import FormReport from '../components/FormReport'
 
 const reportScope = [
   { "name": '🗽 Attractions', "idx": 'attractions', "checked": true, "expand": false },
@@ -120,121 +121,32 @@ function Home() {
   return (
     <>
       <Layout>
-        <section id="top-view" className="pt-8 pb-2 -mt-8 lg:-mt-36">
-          <div className="bg-gradient-to-r from-teal-50 via-amber-50 to-purple-50 w-full h-full top-0 left-0">
+        <section id="top-view" className="-mt-8 lg:-mt-36">
+          <div className="lg:pt-20 pt-16 pb-20 bg-gradient-to-r from-teal-50 via-amber-50 to-purple-50 w-full h-full top-0 left-0">
             <div className="max-w-3xl mx-auto lg:pt-20 flex justify-center">
-              <div className="pt-5 lg:pt-10 pb-16 px-4 text-center">
-                <div className="text-4xl lg:text-6xl">🛫</div>
-                <h1 className="text-xl lg:text-4xl text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
-                  Plan Less, Explore More.
-                </h1>
-                <h2 className="hidden lg:block pt-2 text-base lg:text-xl text-stone-700">
-                  Plan your perfect holiday with your personalized guide.
-                </h2>
-
-                <div className="pt-6">
-                  <div className="flex flex-wrap lg:flex-nowrap">
-                    <div className="w-full lg:w-5/6">
-                      <div className="flex flex-wrap items-center justify-center">
-                        <div className="pr-2 w-full lg:w-3/5 ">
-                          <p className="text-sm lg:text-base font-bold text-left">Destination:</p>
-                        </div>
-                        <div className="pr-2 hidden lg:block w-1/2 lg:w-1/5">
-                          <p className="text-sm lg:text-base font-bold text-left">Date from:</p>
-                        </div>
-                        <div className="pr-3 hidden lg:block w-1/2 lg:w-1/5">
-                          <p className="text-sm lg:text-base font-bold text-left">Date to:</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="w-full lg:w-1/6"></div>   
-                  </div>
-
-                  <div className="flex flex-wrap lg:flex-nowrap items-center">
-                    <div className="w-full lg:w-5/6">
-                      <div className="flex flex-wrap items-center justify-center">
-                        <div className="lg:pr-2 w-full lg:w-3/5">
-                          <input 
-                            type="text" 
-                            placeholder="ex. Napoli, Italy" 
-                            className="p-2 lg:p-1 border-2 rounded-md text-center text-stone-800 w-full"
-                          />
-                        </div>
-                        <div className="lg:pr-2 lg:pt-0 pt-2 pr-1 w-1/2 lg:w-1/5">
-                          <input 
-                            id="dateFrom" 
-                            type="date" 
-                            className="p-2 lg:p-1 border-2 rounded-md text-center text-stone-800 w-full"
-                          />
-                        </div>
-                        <div className="lg:pr-0 lg:pt-0 pt-2 pl-1 w-1/2 lg:w-1/5">
-                          <input 
-                            id="dateTo" 
-                            type="date" 
-                            className="p-2 lg:p-1 border-2 rounded-md text-center text-stone-800 w-full"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="lg:mt-0 mt-2 w-full lg:w-1/6 flex justify-end lg:justify-end">
-                      <button href="#" className="px-4 py-1 bg-gradient-to-tr from-blue-700 via-blue-800 to-blue-600  rounded-lg wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
-                        <p className="text-white text-base lg:text-lg font-bold">🚀 Go!</p>
-                      </button>
-                    </div>   
-                  </div>
-                </div>
-
-                <p className="pt-6 text-base font-bold text-left">My Interests (the best of):</p>
-                <div className="pt-1 flex flex-wrap justify-left lg:gap-2 gap-1">
-                  {items.map((item) => (
-                    <button key={item.name} onClick={() => toggleReportItem(item.name)}
-                      className={`px-1 lg:px-3 py-1 text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${item.checked 
-                        ? 'bg-stone-700 border-stone-950 text-white' 
-                        : 'bg-stone-50 border-stone-400 text-black'}`}>
-                      {item.name}
-                    </button>
-                  ))}
-                </div>
-
-                <p className="pt-6 text-base font-bold text-left">My Preferences:</p>
-                <div className="pt-0 flex items-center">
-                    <input
-                      type="checkbox"
-                      id="savePreferences"
-                      className="h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900"
-                      defaultChecked
-                    />
-                    <label htmlFor="savePreferences" className="pt-1 pl-1 text-xs lg:text-sm text-left">
-                      Save My Interests & Preferences
-                    </label>
-                </div>
-                <div className="pt-2  flex flex-wrap justify-left lg:gap-2 gap-1">
-                    {visiblePreferences.map((preference) => (
-                      <button
-                        key={preference.name}
-                        onClick={() => togglePreference(preference.name)}
-                        className={`px-1 lg:px-3 py-1 text-xs lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg ${
-                          preference.checked
-                          ? 'bg-stone-700 border-2 border-stone-950 text-white' 
-                          : ' bg-stone-50 border-2 border-blue-500 text-black text-sm lg:text-base'}`}>
-                        {preference.name}
-                      </button>
-                    ))}
-                </div>
+              <div className="px-4">
+                <div className="text-4xl lg:text-6xl text-center">🗺️</div>
+                  <h1 className="text-xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
+                    Plan Less, Explore More.
+                  </h1>
+                  <h2 className="hidden lg:block pt-2 text-base text-center lg:text-xl text-stone-700">
+                    Plan your perfect holiday with your personalized guide.
+                  </h2>
+                  <FormReport />
                 </div>
               </div>
           </div>
         </section>
         
         <section id="key-features" className={"pt-6 lg:pt-20 pb-10 overflow-x-hidden"}>
-          <div className={"container mx-auto"}>
+          <div className={"max-w-5xl mx-auto"}>
             <div className={"flex flex-wrap lg:flex-nowrap"}>
               <div className={"w-full lg:w-3/5"}>
 
                 <h1 className="pt-4 text-lg lg:text-2xl font-bold text-stone-900">
                   🧭 My Holiday Planner creates your own travel option list.
                 </h1>
-                <p className="pt-4 text-base lg:text-xl text-stone-900">
+                <p className="pt-2 text-base lg:text-lg text-stone-900">
                   Our AI-driven solution reviews real-time internet data to create a report up to your preferences.
                 </p>
                 <p className="pt-4 text-base lg:text-lg text-stone-900 font-bold ">
@@ -260,18 +172,19 @@ function Home() {
         </section>
 
         <section id="partnerships" className="py-16 overflow-x-hidden">
-          <div className="container mx-auto">
 
-          <div className="bg-gradient-to-b from-sky-50 via-white to-white">
-            <div className="pt-10 max-w-6xl mx-auto">
-              <div className={"hidden lg:block flex flex-wrap lg:flex-nowrap"}>
-                <p className={"pb-8 text-lg lg:text-2xl font-bold text-stone-800 wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
-                  Over 100 information sources:
-                </p>               
+          <div className="bg-gradient-to-b from-white via-white to-white">
+            <div className={"max-w-5xl mx-auto"}>
+              <div className="pt-10 max-w-6xl mx-auto">
+                <div className={"hidden lg:block flex flex-wrap lg:flex-nowrap"}>
+                  <p className={"pb-8 text-lg lg:text-2xl font-bold text-stone-800 wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
+                  🌐 Over 100 information sources:
+                  </p>               
+                </div>  
               </div>  
-            </div>  
+            </div>
           </div>
-          <div className="max-w-6xl mx-auto">  
+          <div className="max-w-5xl mx-auto">  
             <div className="flex justify-center pt-4">
               <div className="flex flex-wrap items-center px-2">
                 {partnerships.map((item, index) => (
@@ -298,6 +211,7 @@ function Home() {
             
           </div>
           <div className="bg-gradient-to-t from-sky-50 via-white to-white">
+          <div className="container mx-auto">
               <div className="pt-10 max-w-6xl mx-auto">
                 <div className={"hidden lg:block flex flex-wrap lg:flex-nowrap"}>
                 <p className={"pb-8 text-right text-lg lg:text-2xl text-stone-800 font-bold wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
