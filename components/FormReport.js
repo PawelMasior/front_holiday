@@ -104,19 +104,19 @@ const Form = () => {
   });
 
   return (
-    <div className="px-4 w-full h-full top-0 left-0">
+    <div className="w-full h-full top-0 left-0">
       <div className="pt-6">
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-5/6">
             <div className="flex flex-wrap items-center justify-center">
               <div className="pr-2 w-full lg:w-3/5">
-                <p className="text-sm lg:text-base font-bold text-left">Destination:</p>
+                <p className="text-sm lg:text-base font-bold text-left">My Destination:</p>
               </div>
               <div className="pr-2 hidden lg:block w-1/2 lg:w-1/5">
-                <p className="text-sm lg:text-base font-bold text-left">Date from:</p>
+                <p className="text-sm lg:text-base font-bold text-left">From:</p>
               </div>
               <div className="pr-3 hidden lg:block w-1/2 lg:w-1/5">
-                <p className="text-sm lg:text-base font-bold text-left">Date to:</p>
+                <p className="text-sm lg:text-base font-bold text-left">To:</p>
               </div>
             </div>
           </div>
@@ -158,31 +158,40 @@ const Form = () => {
           </div>
         </div>
       </div>
-
-      {/* Smoothly toggling content sections */}
       <div className="pt-6 w-full">
-      <button onClick={() => setHiddenLocal_1(!hidden_1)} className="flex flex-row items-center justify-between w-full text-stone-800 bg-transparent text-left">
-          <FiChevronRight className={`text-white bg-gradient-to-tr from-blue-700 via-blue-800 to-blue-600 rounded-full transition ease-in-out duration-500 transform ${hidden_1 
-            ? 'rotate-0' : 'rotate-90'}`} style={{ fontSize: '30px' }} />
-          <div className="w-full">
-            <p className="pl-2 text-stone-900 text-base lg:text-lg font-bold">
-            Report me the best information about:
+        <button onClick={() => setHiddenLocal_1(!hidden_1)} className="flex flex-row items-center justify-between w-full text-stone-800 bg-transparent text-left">
+            <div className="left-[-2px] relative flex items-center transition-transform ease-in-out duration-500">
+              <FiChevronRight
+                className={`text-blue-800 bg-transparent transform transition-transform duration-500 ease-in-out 
+                  ${hidden_1 ? 'rotate-0' : 'rotate-90'} 
+                  ${hidden_1 ? '' : 'hidden'} 
+                  `}
+                style={{ fontSize: '30px' }}
+              />
+            </div>
+            <div className="w-full transform transition-transform duration-500 ease-in-out">
+              <p className="pl-0 text-stone-900 text-lg lg:text-lg font-bold">
+                Find me the best information about:
+              </p>
+            </div>
+          </button>
+
+        <div className={`lg:pl-0 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-screen opacity-100'}`}>
+          <div className="pt-5 flex items-center">
+            <p className="text-left text-stone-900 text-base lg:text-base font-bold">
+            My Choices (
             </p>
-          </div>
-        </button>
-        <div className={`lg:pl-8 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-screen opacity-100'}`}>
-        <div className="pt-5 flex items-center">
             <span className="flex items-center"> {/* Added margin-left for spacing */}
               <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
               <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base font-bold">
-                Save my choices.
+              save)
               </label>
             </span>
           </div>
           <div className="pt-2 flex flex-wrap justify-left lg:gap-2 gap-1">
             {items.map((item) => (
               <button key={item.name} onClick={() => toggleReportItem(item.name)}
-                className={`px-1 lg:px-3 py-1 text-sm lg:text-sm wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${item.checked 
+                className={`px-1 lg:px-3 py-1 text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${item.checked 
                   ? 'bg-stone-700 border-stone-950 text-white' 
                   : 'bg-stone-50 border-stone-400 text-black'}`}>
                 {item.name}
@@ -191,13 +200,13 @@ const Form = () => {
           </div>
           <div className="lg:pl-0">
           <div className="pt-6 flex items-center">
-            {/* <p className="text-left text-stone-900 text-base lg:text-base font-bold">
-            ccccc
-            </p> */}
+            <p className="text-left text-stone-900 text-base lg:text-base font-bold">
+            My Preferences (
+            </p>
             <span className="flex items-center"> {/* Added margin-left for spacing */}
               <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
               <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base font-bold">
-                Save my preferences.
+                save)
               </label>
             </span>
           </div>
@@ -207,7 +216,7 @@ const Form = () => {
                 <button
                   key={preference.name}
                   onClick={() => togglePreference(preference.name)}
-                  className={`px-1 lg:px-3 py-1 text-sm lg:text-sm wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${
+                  className={`px-1 lg:px-3 py-1 text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${
                     preference.checked
                       ? 'bg-stone-700 border-2 border-stone-950 text-white' 
                       : 'bg-stone-50 border-2 border-blue-500 text-black'}`}>
