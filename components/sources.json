@@ -8,8 +8,24 @@
       "href": "https://openai.com/"
   },
   {
-      "src": "https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg",
-      "href": "https://en.wikipedia.org"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/640px-Google_Gemini_logo.svg.png",
+    "href": "https://gemini.google.com/app"
+},
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg",
+    "href": "https://openai.com/"
+  },
+  {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yahoo%21_%282019%29.svg/1920px-Yahoo%21_%282019%29.svg.png",
+      "href": "https://www.yahoo.com/"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/220px-Baidu.svg.png",
+    "href": "https://www.baidu.com/"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Microsoft_Bing_logo.svg/1920px-Microsoft_Bing_logo.svg.png",
+    "href": "https://www.bing.com/"
   },
   {
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Booking.com_logo.svg",

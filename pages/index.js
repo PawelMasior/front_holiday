@@ -4,10 +4,10 @@ import partnerships from '../components/sources.json';
 import FormReport from '../components/FormReport'
 
 const reportExamples = [
-  { "ttl": '☀️ Weather', "sub": "Adjust report to weather forecasts." },
+  { "ttl": '☀️ Weather', "sub": "Adjust to do list to weather forecasts." },
   { "ttl": '🏛️ Opening hours', "sub": "Verify if visiting places are opened." },
-  { "ttl": '🎉 Holidays', "sub": "Check for local festivals and holidays." },
-  { "ttl": '⭐ Reviews', "sub": "Select the best options based on reviews." },
+  { "ttl": '🎉 Holidays', "sub": "Check for local festivals in the area." },
+  { "ttl": '⭐ Reviews', "sub": "Verify review to select only the best options." },
   { "ttl": '🍽️ Diet', "sub": "Adjust restaurant list to your eating preferences." },
 ];
 
@@ -26,16 +26,16 @@ function Home() {
         >
           <div
             // className="absolute inset-0 bg-gradient-to-r from-teal-50 via-amber-50 to-purple-50 opacity-60" // Adjust opacity here
-            className="absolute inset-0 bg-white opacity-70" // Adjust opacity here
+            className="absolute inset-0 bg-white opacity-65" // Adjust opacity here
             style={{ zIndex: 1 }}
           />
           <div className="lg:mb-16 max-w-3xl mx-auto lg:pt-20 flex justify-center" style={{ position: 'relative', zIndex: 2 }}>
             <div className="px-4">
-              <div className="text-4xl lg:text-6xl text-center">🗺️</div>
+              {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
               <h1 className="mt-2 lg:mt-2 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
-                Plan Less, Explore More.
+              🗺️ Plan Less, Explore More.
               </h1>
-              <h2 className="hidden lg:block pt-2 text-base text-center lg:text-xl text-stone-700">
+              <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
                 Plan your perfect holiday with your personalized guide.
               </h2>
               <FormReport />
@@ -54,11 +54,11 @@ function Home() {
                   🧭 My Holiday Planner
                 </h1>
                 <p className="pt-2 text-base lg:text-lg text-stone-900">
-                Create your personalized travel options list effortlessly.
-                Our AI finds real-time data just for you, saving you time by giving you only the important information and helping you discover new things!
+                Our AI finds real-time data taking into account your personal preferences.
+                This way you not only save your time but focus only on the important information and discover new things!
                 </p>
                 <p className="pt-4 text-base lg:text-lg text-stone-900 font-bold ">
-                  What Holiday Planner can do - examples:
+                  What My Holiday Planner can do - examples:
                 </p>                
                 <div className="pt-4 pl-4 flex flex-wrap justify-left gap-2">
                     {reportExamples.map((item, index) => (
@@ -118,7 +118,7 @@ function Home() {
 
             
           </div>
-          <div className="bg-gradient-to-t from-sky-50 via-white to-white">
+          <div className="bg-gradient-to-t from-white via-white to-white border-b-2 border-blue-200">
           <div className="container mx-auto">
               <div className="max-w-6xl mx-auto">
                 <div className={"px-4 pb-10 lg:mt-10 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
