@@ -124,7 +124,7 @@ function Home() {
           </div>
         </section>
 
-        <section id="partnerships" className="pt-12 border-t-2 border-blue-200   ">
+        <section id="partnerships" className="border-t-2 border-blue-200   ">
           <div className="lg:mt-16 bg-gradient-to-b from-white via-white to-white">
             <div className={"max-w-5xl mx-auto overflow-x-hidden"}>
               <div className="max-w-6xl mx-auto">
