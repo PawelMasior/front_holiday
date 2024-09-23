@@ -148,7 +148,7 @@ const Form = () => {
               </div>
             </div>
           </div>
-          <div className="lg:mt-0 mt-2 w-full lg:w-1/6 flex justify-end lg:justify-end">
+          <div className="lg:mt-0 mt-4 w-full lg:w-1/6 flex justify-end lg:justify-end">
             <button
               href="#"
               className="px-4 py-1 bg-gradient-to-tr from-blue-700 via-blue-800 to-blue-600 rounded-lg wow animate__animated animate__fadeIn animated hover-up-2 duration-500"
@@ -170,7 +170,7 @@ const Form = () => {
               />
             </div>
             <div className="w-full transform transition-transform duration-500 ease-in-out">
-              <p className="pl-0 text-stone-900 text-lg lg:text-lg font-bold">
+              <p className="pl-0 text-stone-900 text-base lg:text-lg font-bold">
                 Find me the best information about:
               </p>
             </div>

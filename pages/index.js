@@ -11,7 +11,7 @@ const reportExamples = [
   { "ttl": '🍽️ Diet', "sub": "Adjust restaurant list to your eating preferences." },
 ];
 
-const serviceData = [
+const reportSamples = [
   {
     title: "🥟 Wrocław, Poland",
     url: 'url(/assets/imgs/backgrounds/wroclaw.webp)',
@@ -64,7 +64,7 @@ function Home() {
           </div>
         </section>
 
-        <section id="key-features" className={"lg:mt-10 pb-12 overflow-x-hidden"}>
+        <section id="key-features" className={"py-12 overflow-x-hidden"}>
           <div className={"max-w-5xl mx-auto"}>
             <div className={"px-4 flex flex-wrap lg:flex-nowrap"}>
               <div className={"w-full lg:w-3/5"}>
@@ -87,19 +87,19 @@ function Home() {
               </div>
               <div className="hidden lg:block relative inset-0 w-1/3 ml-auto">
                 <div className="flex items-center h-full wow animate__animated animate__fadeIn animated" data-wow-delay=".2s">
-                  <img className="absolute top-0 left-0 w-40 ml-0 -mt--4 h-[200px]" src="/assets/imgs/elements/blob-tear-light.svg" />
-                  <img className="absolute bottom-0 right-0 w-40 -mb-0 h-[200px]" src="/assets/imgs/elements/blob-tear-light.svg" />
-                  <img className="rounded-full lg:max-w-lg lg:max-h-lg mx-auto h-[280px] relative mx-auto" src="/img/world_1.png"/>
+                  <img className="absolute top-0 left-0 w-40 ml-0 -mt--4 h-[200px]" src="/assets/imgs/elements/blob-tear-borrower.svg" />
+                  <img className="absolute bottom-0 right-0 w-40 -mb-0 h-[200px]" src="/assets/imgs/elements/blob-tear-investor.svg" />
+                  <img className="rounded-3xl lg:max-w-lg lg:max-h-lg mx-auto h-[280px] relative mx-auto" src="/img/world_5.webp"/>
                 </div>
               </div>   
             </div>
           </div>
         </section>
 
-        <section id="examples" className="lg:pt-6 pb-6 border-t-2 border-blue-200">
-          <div className="pt-6 max-w-5xl mx-auto px-4">
+        <section id="examples" className="py-12 border-t-2 border-blue-200">
+          <div className="max-w-5xl mx-auto px-4">
             <div className={"w-full "}>
-                <h3 className="text-lg lg:text-2xl font-bold text-stone-900">
+                <h3 className="pt-4 text-lg lg:text-2xl font-bold text-stone-900">
                 🗺️ Plan Less, Explore More
                 </h3>
                 <p className="pt-2 text-base lg:text-lg text-stone-900 text-justify">
@@ -107,7 +107,7 @@ function Home() {
                 </p>
             </div>
             <div className="pt-6 flex flex-wrap">
-              {serviceData.map((service, index) => (
+              {reportSamples.map((service, index) => (
                 <a href="/" className="px-2 hover-up-2 w-1/2 md:w-1/2 lg:w-1/4 px-1 mb-6 wow animate__animated animate__fadeIn duration-500" key={index}>
                   <div className="lg:h-[140px] h-[90px] shadow rounded-2xl"
                     style={{ backgroundImage: service.url, backgroundSize: 'cover', backgroundPosition: 'top',}}>
@@ -124,11 +124,11 @@ function Home() {
           </div>
         </section>
 
-        <section id="partnerships" className="pt-0 overflow-x-hidden">
-          <div className="bg-gradient-to-b from-white via-white to-white border-t-2 border-blue-200">
-            <div className={"max-w-5xl mx-auto"}>
+        <section id="partnerships" className="pt-12 border-t-2 border-blue-200   ">
+          <div className="lg:mt-16 bg-gradient-to-b from-white via-white to-white">
+            <div className={"max-w-5xl mx-auto overflow-x-hidden"}>
               <div className="max-w-6xl mx-auto">
-                <div className={"px-4 pt-10  flex flex-wrap lg:flex-nowrap"}>
+                <div className={"px-4 pt-4 pb-4  flex flex-wrap lg:flex-nowrap"}>
                   <p className={"text-base lg:text-2xl font-bold text-stone-800 wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
                   🌐 Unlimited web sources:
                   </p>               
@@ -159,13 +159,11 @@ function Home() {
                 ))}
               </div>
             </div>
-
-            
           </div>
           <div className="bg-gradient-to-t from-white via-white to-white border-b-2 border-blue-200">
           <div className="container mx-auto">
               <div className="max-w-6xl mx-auto">
-                <div className={"px-4 pb-10 lg:mt-4 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
+                <div className={"px-4 pb-16 lg:mt-4 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
                 <p className={"text-right text-lg lg:text-xl text-stone-800 font-bold wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
                 ...and much more.
                 </p>          
