@@ -2,13 +2,13 @@ import React from "react";
 import Link from "next/link"
 import Image from 'next/image'
 
-const section_footer = "py-20"
+const section_footer = "pt-16"
 const section_div = "container px-4 mx-auto wow animate__animated animate__fadeIn"
 const div_content = "flex flex-wrap mb-6 lg:mb-20 -mx-3 text-center lg:text-left grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 "
 const p_motto = "pt-2  max-w-md mx-auto font-regular lg:max-w-full lg:mx-0  lg:text-xl text-stone-400 leading-relaxed"
 const div_block = "w-full lg:w-1/4 px-3 mb-8 lg:mb-0"
-const h2_title = "mb-2 lg:mb-4 lg:text-lg font-bold text-stone-500"
-const a_subtitle = "text-sm lg:text-sm font-medium text-stone-500 hover:text-stone-600 leading-relaxed"
+const h2_title = "mb-2 lg:mb-4 lg:text-lg font-bold text-stone-800"
+const a_subtitle = "text-sm lg:text-sm font-medium text-stone-800 hover:text-stone-900 leading-relaxed"
 const class_image = 'wow animate__animated animate__fadeIn animated hover-up-2 duration-500'
 
 const Footer = () => {
@@ -20,37 +20,29 @@ const Footer = () => {
 
                         <a href="/" className="w-full lg:w-2/5 px-3 mb-6 lg:mb-0 wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
                             <div className="flex  lg:justify-start sm:justify-start lg:justify-start">
-                                <div className={"pr-4 lg:pr-0 text-3xl font-semibold"}>
+                                <div className={"pr-4 lg:pr-0 font-semibold"}>
                                     {/* <img src="/assets/imgs/logos/logo_grey.svg" alt="site logo" width={200}/> */}
-                                    <p className="text-stone-700">
-                            🧭 My Holiday Planner
-                            </p>
+
                                 </div>
                             </div>
-                            <p className={"pt-4 lg:pl-10 mx-auto font-semibold lg:max-w-full lg:mx-0  lg:text-lg text-stone-700 "}>
+                            <p className="text-center lg:text-left text-stone-900 font-bold text-xl lg:text-2xl ">
+                            🧭 My Holiday Planner
+                            </p>
+                            <p className={"pt-4 lg:pl-10 lg:max-w-full lg:mx-0 lg:text-lg text-stone-900 font-bold"}>
                             Plan Less, Explore More.
                             </p>                           
                         </a>
                         <div className="flex flex-wrap w-full lg:w-3/5">
                             <div className={div_block}>
                                 <a href="/#" className={h2_title}> o Information</a>
-                                {/* <a className={a_subtitle}><p>General</p></a> */}
-                                {/* <a href="/articles" className={a_subtitle}><p>Articles</p></a>
-                                <a href="/about-team" className={a_subtitle}><p>Team</p></a> */}
                             </div>
                             <div className={div_block}>
                                 <a className={h2_title} href="/contact"> o Contact</a>
-                                {/* <a href="/contact" className={a_subtitle}><p>Investor Relations</p></a> */}
-                                {/* <a href="/contact" className={a_subtitle}><p>Contact</p></a>
-                                <a href="/contact" className={a_subtitle}><p>Careers</p></a>
-                                <a href="/contact" className={a_subtitle}><p>Help</p></a> */}
                             </div>
                             <div className={div_block}>
                                 <a className={h2_title}>Documents</a>
                                 <a href="/document-terms-of-use" className={a_subtitle}><p>Terms of Use</p></a>
-                                {/* <a href="/document-security-policy" className={a_subtitle}><p>Security Policy</p></a> */}
                                 <a href="/document-privacy-policy" className={a_subtitle}><p>Privacy Policy</p></a>
-                                {/* <a href="/document-sustainable-development" className={a_subtitle}><p>Sustainable Development</p></a> */}
                             </div> 
                             <div className={div_block}>
                                 {/* <h2 className={h2_title}>Social Media</h2> */}

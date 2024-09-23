@@ -11,6 +11,25 @@ const reportExamples = [
   { "ttl": '🍽️ Diet', "sub": "Adjust restaurant list to your eating preferences." },
 ];
 
+const serviceData = [
+  {
+    title: "🥟 Wrocław, Poland",
+    url: 'url(/assets/imgs/backgrounds/wroclaw.webp)',
+  },
+  {
+    title: "🍕 Napoli, Italy",
+    url: 'url(/assets/imgs/backgrounds/napoli.jpg)',
+  },
+  {
+    title: "🍇 Mersellie, France",
+    url: 'url(/assets/imgs/backgrounds/marsellie.jpg)',
+  },
+  {
+    title: "🕌 Islamabad, Pakistan",
+    url: 'url(/assets/imgs/backgrounds/islamabad.jpg)',
+  },
+];
+
 function Home() {
   return (
     <>
@@ -33,7 +52,7 @@ function Home() {
             <div className="lg:mb-16 max-w-3xl mx-auto lg:pt-20 flex justify-center" style={{ position: 'relative', zIndex: 2 }}>
               <div className="px-4">
                 {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
-                <h1 className="mt-2 lg:mt-2 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
+                <h1 className="mt-8 lg:mt-8 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
                 🗺️ Plan Less, Explore More.
                 </h1>
                 <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
@@ -45,22 +64,20 @@ function Home() {
           </div>
         </section>
 
-        <section id="key-features" className={"pt-6 lg:pt-20 pb-10 overflow-x-hidden"}>
+        <section id="key-features" className={"lg:mt-10 pb-12 overflow-x-hidden"}>
           <div className={"max-w-5xl mx-auto"}>
             <div className={"px-4 flex flex-wrap lg:flex-nowrap"}>
               <div className={"w-full lg:w-3/5"}>
-
                 <h1 className="pt-4 text-lg lg:text-2xl font-bold text-stone-900">
                   🧭 My Holiday Planner
                 </h1>
                 <p className="pt-2 text-base lg:text-lg text-stone-900 text-justify">
-                Our AI finds real-time data taking into account your personal preferences.
-                This way you not only save your time but focus only on the important information and discover new things!
+                Our AI gathers real-time data tailored to your preferences, helping you save time on planning, focus on what matters most, and discover new things.
                 </p>
                 <p className="pt-4 text-base lg:text-lg text-stone-900 font-bold ">
                   What My Holiday Planner can do - examples:
                 </p>                
-                <div className="pt-4 pl-4 flex flex-wrap justify-left gap-2">
+                <div className="pt-4 flex flex-wrap justify-left gap-2">
                     {reportExamples.map((item, index) => (
                         <p className={`lg:px-3 py-1 wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg`}>
                             <span className="font-bold">{item.ttl}:</span> {item.sub}
@@ -79,8 +96,35 @@ function Home() {
           </div>
         </section>
 
-        <section id="partnerships" className="py-16 overflow-x-hidden">
+        <section id="examples" className="lg:pt-6 pb-6 border-t-2 border-blue-200">
+          <div className="pt-6 max-w-5xl mx-auto px-4">
+            <div className={"w-full "}>
+                <h3 className="text-lg lg:text-2xl font-bold text-stone-900">
+                🗺️ Plan Less, Explore More
+                </h3>
+                <p className="pt-2 text-base lg:text-lg text-stone-900 text-justify">
+                See sample report for any place in the world.
+                </p>
+            </div>
+            <div className="pt-6 flex flex-wrap">
+              {serviceData.map((service, index) => (
+                <a href="/" className="px-2 hover-up-2 w-1/2 md:w-1/2 lg:w-1/4 px-1 mb-6 wow animate__animated animate__fadeIn duration-500" key={index}>
+                  <div className="lg:h-[140px] h-[90px] shadow rounded-2xl"
+                    style={{ backgroundImage: service.url, backgroundSize: 'cover', backgroundPosition: 'top',}}>
+                  </div>
+                  <div className='pt-2  justify-center flex'>
+                      <h2 className={`text-sm lg:text-lg text-stone-900 flex font-bold wow animate__animated animate__fadeInDown`} data-wow-delay=".1s">
+                      <span>{service.icon}</span>
+                          {service.title} 
+                      </h2>
+                    </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
 
+        <section id="partnerships" className="pt-0 overflow-x-hidden">
           <div className="bg-gradient-to-b from-white via-white to-white border-t-2 border-blue-200">
             <div className={"max-w-5xl mx-auto"}>
               <div className="max-w-6xl mx-auto">
@@ -121,7 +165,7 @@ function Home() {
           <div className="bg-gradient-to-t from-white via-white to-white border-b-2 border-blue-200">
           <div className="container mx-auto">
               <div className="max-w-6xl mx-auto">
-                <div className={"px-4 pb-10 lg:mt-10 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
+                <div className={"px-4 pb-10 lg:mt-4 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
                 <p className={"text-right text-lg lg:text-xl text-stone-800 font-bold wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
                 ...and much more.
                 </p>          

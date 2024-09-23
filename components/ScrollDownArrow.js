@@ -2,7 +2,7 @@ import React from "react";
 
 const scrollToSectionId = '#';
 const scrollDownArrowWrapperStyles = 'relative flex justify-center -mt-10 duration-3000'
-const scrollDownArrowBouncerStyles = "object-scale-down inline-block animate-bounce rounded-full p-2 bg-[#fbbf24] opacity-50 duration-3000"
+const scrollDownArrowBouncerStyles = "object-scale-down inline-block animate-bounce rounded-full p-2 bg-[#1c1917] opacity-50 duration-3000"
 // const scrollDownArrowWrapperStyles = 'absolute flex justify-center'
 // const scrollDownArrowBouncerStyles = "inline-block animate-bounce rounded-full p-2 bg-[#fbbf24] opacity-70 duration-500 "
 const scrollDownArrowStyles = "w-6 h-6 text-slate-50"
