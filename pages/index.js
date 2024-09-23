@@ -15,36 +15,36 @@ function Home() {
   return (
     <>
       <Layout>
-      <section id="top-view" className="-mt-20 lg:-mt-36 relative">
-        <div
-          className="pt-32 pb-20 w-full h-full top-0 left-0"
-          style={{
-            backgroundImage: 'url(/assets/imgs/backgrounds/clouds.jfif)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'top',
-          }}
-        >
+        
+        <section id="top-view" className="-mt-20 lg:-mt-36 relative">
           <div
-            // className="absolute inset-0 bg-gradient-to-r from-teal-50 via-amber-50 to-purple-50 opacity-60" // Adjust opacity here
-            className="absolute inset-0 bg-white opacity-65" // Adjust opacity here
-            style={{ zIndex: 1 }}
-          />
-          <div className="lg:mb-16 max-w-3xl mx-auto lg:pt-20 flex justify-center" style={{ position: 'relative', zIndex: 2 }}>
-            <div className="px-4">
-              {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
-              <h1 className="mt-2 lg:mt-2 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
-              🗺️ Plan Less, Explore More.
-              </h1>
-              <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
-                Plan your perfect holiday with your personalized guide.
-              </h2>
-              <FormReport />
+            className="pt-32 pb-20 w-full h-full top-0 left-0"
+            style={{
+              backgroundImage: 'url(/assets/imgs/backgrounds/clouds.jfif)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'top',
+            }}
+          >
+            <div
+              // className="absolute inset-0 bg-gradient-to-r from-teal-50 via-amber-50 to-purple-50 opacity-60" // Adjust opacity here
+              className="absolute inset-0 bg-white opacity-65" // Adjust opacity here
+              style={{ zIndex: 1 }}
+            />
+            <div className="lg:mb-16 max-w-3xl mx-auto lg:pt-20 flex justify-center" style={{ position: 'relative', zIndex: 2 }}>
+              <div className="px-4">
+                {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
+                <h1 className="mt-2 lg:mt-2 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
+                🗺️ Plan Less, Explore More.
+                </h1>
+                <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
+                  Plan your perfect holiday with your personalized guide.
+                </h2>
+                <FormReport />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-        
         <section id="key-features" className={"pt-6 lg:pt-20 pb-10 overflow-x-hidden"}>
           <div className={"max-w-5xl mx-auto"}>
             <div className={"px-4 flex flex-wrap lg:flex-nowrap"}>
@@ -53,7 +53,7 @@ function Home() {
                 <h1 className="pt-4 text-lg lg:text-2xl font-bold text-stone-900">
                   🧭 My Holiday Planner
                 </h1>
-                <p className="pt-2 text-base lg:text-lg text-stone-900">
+                <p className="pt-2 text-base lg:text-lg text-stone-900 text-justify">
                 Our AI finds real-time data taking into account your personal preferences.
                 This way you not only save your time but focus only on the important information and discover new things!
                 </p>
@@ -62,7 +62,7 @@ function Home() {
                 </p>                
                 <div className="pt-4 pl-4 flex flex-wrap justify-left gap-2">
                     {reportExamples.map((item, index) => (
-                        <p className={`px-3 py-1 wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg`}>
+                        <p className={`lg:px-3 py-1 wow animate__animated animate__fadeIn animated hover-up-2 duration-500 rounded-lg`}>
                             <span className="font-bold">{item.ttl}:</span> {item.sub}
                         </p>
                     ))}
@@ -86,7 +86,7 @@ function Home() {
               <div className="max-w-6xl mx-auto">
                 <div className={"px-4 pt-10  flex flex-wrap lg:flex-nowrap"}>
                   <p className={"text-base lg:text-2xl font-bold text-stone-800 wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
-                  🌐 Over 100 web sources:
+                  🌐 Unlimited web sources:
                   </p>               
                 </div>  
               </div>  
@@ -123,7 +123,7 @@ function Home() {
               <div className="max-w-6xl mx-auto">
                 <div className={"px-4 pb-10 lg:mt-10 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
                 <p className={"text-right text-lg lg:text-xl text-stone-800 font-bold wow animate__animated animate__fadeIn"} data-wow-delay=".3s">
-                ... and much more.
+                ...and much more.
                 </p>          
                 </div>  
               </div>  
