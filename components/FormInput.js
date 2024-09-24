@@ -6,14 +6,32 @@ const reportScope = [
     "name": '🗽 Attractions',
     "checked": true,
     "focus": [
+      { "name": '🏛️ Museums', "checked": false },
+      { "name": '⛪ Temples', "checked": false },
+      { "name": '🛍️ Shopping', "checked": false },
       { "name": '📸 Scenic Spots', "checked": false },
-      { "name": '🏛️ Historical Sites', "checked": false },
-      { "name": '🎢 Theme Parks', "checked": false }
+      { "name": '⛩️ Historical Sites', "checked": false },
+      { "name": '🖼️ Art', "checked": false },
+      { "name": '🔬 Science', "checked": false },
+      { "name": '🧒 For Children', "checked": false },
+      // { "name": '🎢 Theme Parks', "checked": false },
+    ]
+  },
+  {
+    "name": '🍽️ Restaurants',
+    "checked": true,
+    "focus": [
+      { "name": '🥣 Local Cousine', "checked": false },
+      { "name": '✨ Michelin Stars', "checked": false },
+      { "name": '🌾 Gluten-Free', "checked": false },
+      { "name": '🥗 Vegan', "checked": false },
+      { "name": '🥦 Vegetarian', "checked": false },
+      { "name": '👩🏻‍🍳 Cooking Classes', "checked": false },
     ]
   },
   {
     "name": '🎉 Events',
-    "checked": false,
+    "checked": true,
     "focus": [
       { "name": '🎉 Festivals', "checked": false },
       { "name": '🎶 Concerts', "checked": false },
@@ -22,71 +40,23 @@ const reportScope = [
     ]
   },
   {
-    "name": '🍽️ Restaurants',
-    "checked": true,
-    "focus": [
-      { "name": '🔪 Local', "checked": false },
-      { "name": '⭐ Michelin Star', "checked": false },
-      { "name": '🌾 Gluten-Free', "checked": false },
-      { "name": '🥗 Vegan', "checked": false },
-      { "name": '👩🏻‍🍳 Classes', "checked": false },
-    ]
-  },
-  {
-    "name": '🛌 Accommodation',
-    "checked": false,
-    "focus": [
-      { "name": '💻 Digital Nomad', "checked": false },
-      { "name": '🏨 Hotels', "checked": false },
-      { "name": '❤️ Romantic', "checked": false },
-    ]
-  },
-
-  {
-    "name": '🍸 Nightlife',
-    "checked": false,
-    "focus": [
-      { "name": '🍸 Bars', "checked": false },
-      { "name": '🎶 Live Music', "checked": false },
-      { "name": '🎧 Nightclubs', "checked": false },
-      { "name": '🕺 Dance', "checked": false },
-      { "name": '🎤 Karaoke', "checked": false }
-    ]
-  },
-  {
-    "name": '🏛️ Museums',
-    "checked": false,
-    "focus": [
-      { "name": '🖼️ Art', "checked": false },
-      { "name": '📜 History', "checked": false },
-      { "name": '🔬 Science', "checked": false },
-      { "name": '🧒 For Children', "checked": false }
-    ]
-  },
-  {
-    "name": '💆 Wellness',
+    "name": '🌇 Stay & Relax',
     "checked": false,
     "focus": [
       { "name": '💆‍♀️ Spa', "checked": false },
       { "name": '🧘 Yoga', "checked": false },
       { "name": '🏋️‍♂️ Gym', "checked": false },
+      { "name": '💻 Digital Nomad', "checked": false },
+      { "name": '🏨 Hotels', "checked": false },
+      { "name": '🏠 Hostels', "checked": false },
+      { "name": '❤️ Romantic', "checked": false }
     ]
   },
   {
-    "name": '🚍 Transportation',
+    "name": '🏞️ Beyond the City',
     "checked": false,
     "focus": [
-      { "name": '🚅 Train', "checked": false },
-      { "name": '🚍 Bus', "checked": false },
-      { "name": '🚗 Car', "checked": false },
-      { "name": '🚴 Bike', "checked": false },
-    ]
-  },
-  {
-    "name": '🏞️ Outside the City',
-    "checked": false,
-    "focus": [
-      { "name": '🏞️ Nature', "checked": false },
+      { "name": '🏕️ Nature', "checked": false },
       { "name": '🚶 Hiking', "checked": false },
       { "name": '🚲 Biking', "checked": false },
       { "name": '🏖️ Beach', "checked": false },
@@ -94,12 +64,34 @@ const reportScope = [
     ]
   },
   {
+    "name": '🍸 Nightlife',
+    "checked": false,
+    "focus": [
+      { "name": '🥂 Bars', "checked": false },
+      { "name": '🎶 Live Music', "checked": false },
+      { "name": '🎧 Nightclubs', "checked": false },
+      { "name": '🕺 Dancing', "checked": false },
+      { "name": '🎤 Karaoke', "checked": false }
+    ]
+  },
+  {
+    "name": '🚍 Transportation',
+    "checked": false,
+    "focus": [
+      { "name": '🚅 Metro', "checked": false },
+      { "name": '🚍 Bus', "checked": false },
+      { "name": '🚕 Taxi', "checked": false },
+      { "name": '🚴 Bike', "checked": false },
+      { "name": '🛴 Scooter', "checked": false },
+    ]
+  },
+  {
     "name": '🛡️ Safety & Health',
     "checked": false,
     "focus": [
       { "name": '🏥 Hospitals', "checked": false },
+      { "name": '🚑 Emergency', "checked": false },
       { "name": '🩺 COVID-19', "checked": false },
-      { "name": '🚨 Emergency', "checked": false }
     ]
   }
 ];
@@ -136,18 +128,25 @@ const Form = () => {
   const togglePreference = (itemName, preferenceName) => {
     const updatedItems = items.map((item) => {
       if (item.name === itemName) {
+        // Toggle the preference
         const updatedfocus = item.focus.map((pref) =>
           pref.name === preferenceName ? { ...pref, checked: !pref.checked } : pref
         );
-        return { ...item, focus: updatedfocus };
+  
+        // Determine if any focus items are checked
+        const anyFocusChecked = updatedfocus.some((focus) => focus.checked);
+  
+        // Update the parent `checked` based on `focus`
+        return { ...item, focus: updatedfocus, checked: anyFocusChecked };
       }
       return item;
     });
+  
     setItems(updatedItems);
   };
 
   return (
-    <div className="w-full h-full top-0 left-0">
+    <div className="w-full  top-0 left-0">
       <div className="pt-6">
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-5/6">
@@ -218,66 +217,78 @@ const Form = () => {
             </p>
           </div>
         </button>
-
         <div className={`lg:pl-0 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-screen opacity-100'}`}>
-          <div className="pt-5 flex items-center">
-            <p className="text-left text-stone-950 text-base lg:text-lg font-bold">
-            My Choices (
-            </p>
-            <span className="flex items-center">
-              <input type="checkbox" id="savefocus" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
-              <label htmlFor="savefocus" className="text-left text-stone-900 text-base lg:text-base font-bold">
-                save)
-              </label>
-            </span>
-          </div>
-          <div className="pt-2 flex flex-wrap justify-left lg:gap-2 gap-1">
-            {items.map((item) => (
-              <button key={item.name} onClick={() => toggleReportItem(item.name)}
-                className={`px-1 lg:px-3 py-1 text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${item.checked 
-                  ? 'bg-stone-700 border-stone-950 text-white' 
-                  : 'bg-stone-50 border-stone-400 text-black'}`}>
-                {item.name}
-              </button>
-            ))}
-          </div>
-          <div className="lg:pl-0">
-            <div className="pt-6 flex items-center">
-              <p className="text-left text-stone-950 text-base lg:text-lg font-bold">
-                My Preference (
-              </p>
-              <span className="flex items-center">
-                <input type="checkbox" id="savefocus" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
-                <label htmlFor="savefocus" className="text-left text-stone-900 text-base lg:text-base font-bold">
-                  save)
-                </label>
-              </span>
+          <div className="lg:pl-2">
+            <div className="hidden lg:block pt-2 flex flex-wrap justify-left">
+                <div className="pt-2 w-full flex flex-wrap lg:flex-nowrap">
+                  <div className="w-full lg:w-1/4 flex-grow-0 flex-shrink-0">
+                    <p className="text-left text-stone-950 text-base lg:text-base font-bold">
+                      Information:
+                    </p>
+                  </div>
+                  <div className="w-full lg:w-3/4 flex-grow-0 flex-shrink-0">
+                    <p className="text-left text-stone-950 text-sm lg:text-base font-bold">
+                      Select My Preferences:
+                    </p>
+                  </div>
+                </div>
             </div>
-            <div className="pt-2 flex flex-wrap justify-left">
-              {items.flatMap((item) =>
-                item.checked && (
-                  <div key={item.name} className="pl-2 pb-2 w-full flex flex-wrap lg:gap-2 gap-1">
-                    {/* Display item name before focus buttons */}
-                    <p className="pl-3 py-1 font-bold text-stone-900">{item.name}:</p>
-
-                      {item.focus.map((focus) => (
+            <div className="flex flex-wrap justify-left">
+              {items.flatMap(
+                (item) =>
+                   (
+                    <div key={item.name} className="w-full flex flex-wrap lg:flex-nowrap">
+                      <div className="pt-3 lg:pt-2 w-full lg:w-1/4 flex-grow-0 flex-shrink-0 flex lg:justify-left items-start  ">
                         <button
-                          key={focus.name}
-                          onClick={() => togglePreference(item.name, focus.name)}
-                          className={` px-2 py-1 text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${
-                            focus.checked
-                              ? 'bg-stone-700 border-2 border-stone-950 text-white'
-                              : 'bg-stone-50 border-2 border-blue-500 text-black'
+                          key={item.name}
+                          onClick={() => toggleReportItem(item.name)}
+                          className={`px-1 lg:px-3 py-1 w-[190px] text-sm lg:text-basewow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 border-stone-950 rounded-lg ${
+                            item.checked ? 'bg-stone-700 text-white' : 'bg-white text-black'
                           }`}
                         >
-                          {focus.name}
-                        </button>
-                      ))}
-                  </div>
-                )
+                        {item.name}
+                      </button>
+                      </div>
+                      <div className="w-full lg:w-3/4 flex-grow-0 flex-shrink-1">
+                        <div className="pt-2 flex flex-wrap lg:gap-2 gap-1">
+                          {item.focus.map((focus) => (
+                            <button
+                              key={focus.name}
+                              onClick={() => togglePreference(item.name, focus.name)}
+                              className={`px-2 py-1 text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 rounded-lg ${
+                                focus.checked
+                                  ? 'bg-stone-700 border-2 border-stone-950 text-white'
+                                  : 'bg-white border-2 border-blue-500 text-black'
+                              }`}
+                            >
+                              {focus.name}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )
               )}
             </div>
-
+            <div className="pt-2 flex flex-wrap justify-left">
+                <div className=" w-full flex flex-wrap lg:flex-nowrap">
+                  <div className="w-full flex-grow-0 flex-shrink-0">
+                  <div className=" flex items-center">
+                    <span className="flex items-center"> {/* Added margin-left for spacing */}
+                      <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
+                      <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base">
+                      Save my preferences
+                      </label>
+                    </span>
+                  </div>
+                  </div>
+                  <div className="w-full lg:w-3/4 flex-grow-0 flex-shrink-0">
+                    <p className="text-left text-stone-950 text-sm lg:text-base font-bold">
+                      Select My Preferences:
+                    </p>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
