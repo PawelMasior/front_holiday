@@ -18,14 +18,15 @@
     "checked": true,
     "focus": [
       { "name": "🥣 Local Cuisine", "checked": false },
+      { "name": "🥙 Street Food", "checked": false },
       { "name": "🌾 Gluten-Free", "checked": false },
       { "name": "🥗 Vegan", "checked": false },
       { "name": "🥦 Vegetarian", "checked": false },
-      { "name": "🥩 Steaks", "checked": false },
-      { "name": "🍣 Sushi", "checked": false },
-      { "name": "🍝 Italian", "checked": false },
-      { "name": "🥡 Chinese", "checked": false },
-      { "name": "✨ Michelin Stars", "checked": false }
+      { "name": "🐟 Sea Food", "checked": false },
+      { "name": "🍦 Ice Cream", "checked": false },
+      { "name": "☕ Cafe", "checked": false },
+      { "name": "✨ Michelin Stars", "checked": false },
+      { "name": "💸 Budget Friendly", "checked": false }
     ]
   },
   {
@@ -64,7 +65,6 @@
       { "name": "🥂 Bars", "checked": false },
       { "name": "🎶 Live Music", "checked": false },
       { "name": "🎧 Nightclubs", "checked": false },
-      { "name": "🕺 Dancing", "checked": false },
       { "name": "🎤 Karaoke", "checked": false }
     ]
   },
