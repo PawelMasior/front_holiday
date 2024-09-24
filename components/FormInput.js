@@ -1,100 +1,6 @@
 import { FiChevronRight } from 'react-icons/fi';
 import React, { useState, useEffect } from 'react';
-
-const reportScope = [
-  {
-    "name": '🗽 Attractions',
-    "checked": true,
-    "focus": [
-      { "name": '🏛️ Museums', "checked": false },
-      { "name": '⛪ Temples', "checked": false },
-      { "name": '🛍️ Shopping', "checked": false },
-      { "name": '📸 Scenic Spots', "checked": false },
-      { "name": '⛩️ Historical Sites', "checked": false },
-      { "name": '🖼️ Art', "checked": false },
-      { "name": '🔬 Science', "checked": false },
-      { "name": '🧒 For Children', "checked": false },
-      // { "name": '🎢 Theme Parks', "checked": false },
-    ]
-  },
-  {
-    "name": '🍽️ Restaurants',
-    "checked": true,
-    "focus": [
-      { "name": '🥣 Local Cousine', "checked": false },
-      { "name": '✨ Michelin Stars', "checked": false },
-      { "name": '🌾 Gluten-Free', "checked": false },
-      { "name": '🥗 Vegan', "checked": false },
-      { "name": '🥦 Vegetarian', "checked": false },
-      { "name": '👩🏻‍🍳 Cooking Classes', "checked": false },
-    ]
-  },
-  {
-    "name": '🎉 Events',
-    "checked": true,
-    "focus": [
-      { "name": '🎉 Festivals', "checked": false },
-      { "name": '🎶 Concerts', "checked": false },
-      { "name": '⚽ Sport', "checked": false },
-      { "name": '🎟️ Exhibitions', "checked": false }
-    ]
-  },
-  {
-    "name": '🌇 Stay & Relax',
-    "checked": false,
-    "focus": [
-      { "name": '💆‍♀️ Spa', "checked": false },
-      { "name": '🧘 Yoga', "checked": false },
-      { "name": '🏋️‍♂️ Gym', "checked": false },
-      { "name": '💻 Digital Nomad', "checked": false },
-      { "name": '🏨 Hotels', "checked": false },
-      { "name": '🏠 Hostels', "checked": false },
-      { "name": '❤️ Romantic', "checked": false }
-    ]
-  },
-  {
-    "name": '🏞️ Beyond the City',
-    "checked": false,
-    "focus": [
-      { "name": '🏕️ Nature', "checked": false },
-      { "name": '🚶 Hiking', "checked": false },
-      { "name": '🚲 Biking', "checked": false },
-      { "name": '🏖️ Beach', "checked": false },
-      { "name": '🍷 Wine Tours', "checked": false },
-    ]
-  },
-  {
-    "name": '🍸 Nightlife',
-    "checked": false,
-    "focus": [
-      { "name": '🥂 Bars', "checked": false },
-      { "name": '🎶 Live Music', "checked": false },
-      { "name": '🎧 Nightclubs', "checked": false },
-      { "name": '🕺 Dancing', "checked": false },
-      { "name": '🎤 Karaoke', "checked": false }
-    ]
-  },
-  {
-    "name": '🚍 Transportation',
-    "checked": false,
-    "focus": [
-      { "name": '🚅 Metro', "checked": false },
-      { "name": '🚍 Bus', "checked": false },
-      { "name": '🚕 Taxi', "checked": false },
-      { "name": '🚴 Bike', "checked": false },
-      { "name": '🛴 Scooter', "checked": false },
-    ]
-  },
-  {
-    "name": '🛡️ Safety & Health',
-    "checked": false,
-    "focus": [
-      { "name": '🏥 Hospitals', "checked": false },
-      { "name": '🚑 Emergency', "checked": false },
-      { "name": '🩺 COVID-19', "checked": false },
-    ]
-  }
-];
+import reportScope from '../components/scope.json';
 
 const Form = () => {
   const [hidden_1, setHiddenLocal_1] = useState(true);
@@ -128,20 +34,14 @@ const Form = () => {
   const togglePreference = (itemName, preferenceName) => {
     const updatedItems = items.map((item) => {
       if (item.name === itemName) {
-        // Toggle the preference
         const updatedfocus = item.focus.map((pref) =>
           pref.name === preferenceName ? { ...pref, checked: !pref.checked } : pref
         );
-  
-        // Determine if any focus items are checked
         const anyFocusChecked = updatedfocus.some((focus) => focus.checked);
-  
-        // Update the parent `checked` based on `focus`
         return { ...item, focus: updatedfocus, checked: anyFocusChecked };
       }
       return item;
     });
-  
     setItems(updatedItems);
   };
 
@@ -152,7 +52,7 @@ const Form = () => {
           <div className="w-full lg:w-5/6">
             <div className="flex flex-wrap items-center justify-center">
               <div className="pr-2 w-full lg:w-3/5">
-                <p className="text-sm lg:text-base font-bold text-left">My Destination:</p>
+                <p className="text-sm lg:text-base font-bold text-left">Destination:</p>
               </div>
               <div className="pr-2 hidden lg:block w-1/2 lg:w-1/5">
                 <p className="text-sm lg:text-base font-bold text-left">From:</p>
@@ -213,11 +113,11 @@ const Form = () => {
           </div>
           <div className="w-full transform transition-transform duration-500 ease-in-out">
             <p className="pl-0 text-stone-900 text-base lg:text-lg font-bold">
-              Find me the best information about:
+              Find the best information about:
             </p>
           </div>
         </button>
-        <div className={`lg:pl-0 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-screen opacity-100'}`}>
+        <div className={`lg:pl-0 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-full opacity-100'}`}>
           <div className="lg:pl-2">
             <div className="hidden lg:block pt-2 flex flex-wrap justify-left">
                 <div className="pt-2 w-full flex flex-wrap lg:flex-nowrap">
@@ -228,7 +128,7 @@ const Form = () => {
                   </div>
                   <div className="w-full lg:w-3/4 flex-grow-0 flex-shrink-0">
                     <p className="text-left text-stone-950 text-sm lg:text-base font-bold">
-                      Select My Preferences:
+                      Select your preferences:
                     </p>
                   </div>
                 </div>
@@ -237,12 +137,12 @@ const Form = () => {
               {items.flatMap(
                 (item) =>
                    (
-                    <div key={item.name} className="w-full flex flex-wrap lg:flex-nowrap">
+                    <div key={item.name} className="lg:mb-2 w-full flex flex-wrap lg:flex-nowrap">
                       <div className="pt-3 lg:pt-2 w-full lg:w-1/4 flex-grow-0 flex-shrink-0 flex lg:justify-left items-start  ">
                         <button
                           key={item.name}
                           onClick={() => toggleReportItem(item.name)}
-                          className={`px-1 lg:px-3 py-1 w-[190px] text-sm lg:text-basewow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 border-stone-950 rounded-lg ${
+                          className={`px-1 lg:px-3 py-1 w-[190px] text-sm lg:text-base wow animate__animated animate__fadeIn animated hover-up-2 duration-500 border-2 border-stone-950 rounded-lg ${
                             item.checked ? 'bg-stone-700 text-white' : 'bg-white text-black'
                           }`}
                         >
@@ -273,19 +173,14 @@ const Form = () => {
             <div className="pt-2 flex flex-wrap justify-left">
                 <div className=" w-full flex flex-wrap lg:flex-nowrap">
                   <div className="w-full flex-grow-0 flex-shrink-0">
-                  <div className=" flex items-center">
-                    <span className="flex items-center"> {/* Added margin-left for spacing */}
-                      <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
-                      <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base">
-                      Save my preferences
-                      </label>
-                    </span>
-                  </div>
-                  </div>
-                  <div className="w-full lg:w-3/4 flex-grow-0 flex-shrink-0">
-                    <p className="text-left text-stone-950 text-sm lg:text-base font-bold">
-                      Select My Preferences:
-                    </p>
+                    <div className=" flex items-center">
+                      <span className="flex items-center"> 
+                        <input type="checkbox" id="savePreferences" defaultChecked className="m-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
+                        <label htmlFor="savePreferences" className="text-left text-stone-900 text-base lg:text-base">
+                        Save my preferences
+                        </label>
+                      </span>
+                    </div>
                   </div>
                 </div>
             </div>
