@@ -69,13 +69,16 @@ function Home() {
             <div className={"px-4 flex flex-wrap lg:flex-nowrap"}>
               <div className={"w-full lg:w-3/5"}>
                 <h1 className="pt-4 text-lg lg:text-2xl font-bold text-stone-900">
-                  🧭 My Holiday Planner
+                  🧭 Dalongo
                 </h1>
-                <p className="pt-2 text-base lg:text-lg text-stone-900 text-justify">
-                Our AI gathers real-time data tailored to your preferences, helping you save time on planning, focus on what matters most, and discover new things.
+                <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
+                Our AI gathers real-time data based on your preferences to provide personalized guide info.
+                Dalongo helps you in time saving on planning, focuses on what matters most, and discovers new things.
+                </p>
+                <p className="pt-1 text-base lg:text-base text-stone-900 text-justify">
                 </p>
                 <p className="pt-4 text-base lg:text-lg text-stone-900 font-bold ">
-                  What My Holiday Planner can do - examples:
+                  What Dalongo can do - examples:
                 </p>                
                 <div className="pt-4 flex flex-wrap justify-left gap-2">
                     {reportExamples.map((item, index) => (
@@ -102,7 +105,7 @@ function Home() {
                 <h3 className="pt-4 text-lg lg:text-2xl font-bold text-stone-900">
                 🗺️ Plan Less, Explore More
                 </h3>
-                <p className="pt-2 text-base lg:text-lg text-stone-900 text-justify">
+                <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
                 See sample report for any place in the world.
                 </p>
             </div>

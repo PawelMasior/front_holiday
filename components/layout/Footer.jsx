@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="w-full lg:w-2/5 px-3 mb-6 lg:mb-0 wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
                         <a href="/" className="block">
                             <p className="text-center lg:text-left text-stone-900 font-bold text-xl lg:text-2xl">
-                                🧭 My Holiday Planner
+                                🧭 Dalongo
                             </p>
                             <p className="pt-4 lg:pl-10 lg:max-w-full lg:mx-0 lg:text-lg text-stone-900 font-bold">
                                 Plan Less, Explore More.

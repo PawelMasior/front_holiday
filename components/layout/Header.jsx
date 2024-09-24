@@ -25,7 +25,7 @@ const Header = ({ handleHidden }) => {
                     <Link href="/">
                         <a className="leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
                             <p className="lg:pr-0 lg:text-2xl text-lg font-semibold text-stone-900">
-                            🧭 My Holiday Planner
+                            🧭 Dalongo
                             </p>
                         </a>
                     </Link>

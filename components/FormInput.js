@@ -119,26 +119,17 @@ const Form = () => {
         </button>
         <div className={`lg:pl-0 transition-all duration-500 ease-in-out overflow-hidden ${hidden_1 ? 'max-h-0 opacity-0' : 'max-h-full opacity-100'}`}>
           <div className="lg:pl-2">
-          <div className="pt-2 flex flex-wrap justify-left">
-                <div className=" w-full flex flex-wrap lg:flex-nowrap">
-                  <div className="w-full flex-grow-0 flex-shrink-0">
-                    <div className=" flex items-center">
-                      <span className="flex items-center"> 
-                        <input type="checkbox" id="savePreferences" defaultChecked className="mr-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
-                        <label htmlFor="savePreferences" className="text-left text-stone-900 text-sm lg:text-base">
-                        Save my preferences
-                        </label>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-            </div>
             <div className="hidden lg:block pt-2 flex flex-wrap justify-left">
                 <div className="pt-2 w-full flex flex-wrap lg:flex-nowrap">
                   <div className="w-full lg:w-1/4 flex-grow-0 flex-shrink-0">
-                    <p className="text-left text-stone-950 text-base lg:text-base font-bold">
-                      Information:
-                    </p>
+                  <div className=" flex items-center">
+                      <span className="flex items-center"> 
+                        <input type="checkbox" id="savePreferences" defaultChecked className="mr-1 h-4 w-4 rounded-lg focus:ring-stone-800 accent-stone-900" />
+                        <label htmlFor="savePreferences" className="text-left text-stone-900 text-sm lg:text-base font-bold">
+                        Save my choices
+                        </label>
+                      </span>
+                    </div>
                   </div>
                   <div className="w-full lg:w-3/4 flex-grow-0 flex-shrink-0">
                     <p className="text-left text-stone-950 text-sm lg:text-base font-bold">

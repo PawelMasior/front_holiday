@@ -21,8 +21,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>My Holiday Planner</title>
-        <meta property="title" content="My Holiday Planner"/>
+        <title>Dalongo</title>
+        <meta property="title" content="Dalongo"/>
         <link rel="shortcut icon" href="/assets/imgs/logos/favicon.svg"/>
         <meta
           name="description"
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
           name="keywords"
           content="travel, personalized guide, trip planning, activities, accommodations, events"
         />
-        <meta property="og:title" content="My Holiday Planner"/>
+        <meta property="og:title" content="Dalongo"/>
         <link property="og:shortcut icon" href="/assets/imgs/logos/favicon.png"/>
         <meta
           property="og:description"
