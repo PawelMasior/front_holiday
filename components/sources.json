@@ -10,8 +10,7 @@
   {
     "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/640px-Google_Gemini_logo.svg.png",
     "href": "https://gemini.google.com/app"
-},
-
+  },
   {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Yahoo%21_%282019%29.svg/1920px-Yahoo%21_%282019%29.svg.png",
       "href": "https://www.yahoo.com/"
@@ -31,6 +30,30 @@
   {
     "src": "https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg",
     "href": "https://www.tripadvisor.com/"
+  },
+  {
+    "src": "https://www.hotels.com/_dms/header/logo.svg?locale=en_US&siteid=300000001&2&6f9ec7db",
+    "href": "https://www.hotels.com/"
+  },
+  {
+    "src": "https://overyourplace.com/content/images/2023/07/overyourplace-1.png",
+    "href": "https://overyourplace.com"
+  },
+  {
+    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Etoile_Michelin-1.svg/768px-Etoile_Michelin-1.svg.png?20200726034603",
+    "href": "https://guide.michelin.com/"
+  },
+  {
+    "src": "https://bookface-images.s3.amazonaws.com/logos/eab05947f01551308325ab52e36b928f77e5c3e7.png?1668463419",
+    "href": "https://wanderlog.com/"
+  },
+  {
+    "src": "https://www.thefork.com/statics/thefork-logotype.svg",
+    "href": "https://www.thefork.com/"
+  },
+  {
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6aAA0_b_27gyiFiXvUQGpEXGbVLtcvi4TUg&s",
+    "href": "https://restaurantguru.com/"
   },
   {
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Yelp_Logo.svg",

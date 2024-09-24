@@ -6,9 +6,10 @@ import FormInput from '../components/FormInput_v2'
 const reportExamples = [
   { "ttl": '☀️ Weather', "sub": "Adjust to do list to weather forecasts." },
   { "ttl": '🏛️ Opening hours', "sub": "Verify if visiting places are opened." },
-  { "ttl": '🎉 Holidays', "sub": "Check for local festivals in the area." },
+  // { "ttl": '🎉 Holidays', "sub": "Check for local festivals in the area." },
   { "ttl": '⭐ Reviews', "sub": "Verify review to select only the best options." },
   { "ttl": '🍽️ Diet', "sub": "Adjust restaurant list to your eating preferences." },
+  { "ttl": '🐉 Language', "sub": "Internet research is done in local language." },
 ];
 
 const reportSamples = [
