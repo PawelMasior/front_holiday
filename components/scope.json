@@ -46,12 +46,12 @@
       "name": "🌇 Stay & Relax",
       "checked": false,
       "focus": [
-        { "name": "💆‍♀️ Spa", "checked": false },
-        { "name": "🧘 Yoga", "checked": false },
-        { "name": "🏋️‍♂️ Gym", "checked": false },
         { "name": "💻 Digital Nomad", "checked": false },
         { "name": "🏨 Hotels", "checked": false },
         { "name": "🏠 Hostels", "checked": false },
+        { "name": "💆‍♀️ Spa", "checked": false },
+        { "name": "🧘 Yoga", "checked": false },
+        { "name": "🏋️‍♂️ Gym", "checked": false },
         { "name": "❤️ Romantic", "checked": false }
       ]
     },

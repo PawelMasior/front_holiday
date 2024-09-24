@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import partnerships from '../components/sources.json';
-import FormReport from '../components/FormReport'
+import FormInput from '../components/FormInput'
 
 const reportExamples = [
   { "ttl": '☀️ Weather', "sub": "Adjust to do list to weather forecasts." },
@@ -49,7 +49,7 @@ function Home() {
               className="absolute inset-0 bg-white opacity-65" // Adjust opacity here
               style={{ zIndex: 1 }}
             />
-            <div className="lg:mb-16 max-w-3xl mx-auto lg:pt-20 flex justify-center" style={{ position: 'relative', zIndex: 2 }}>
+            <div className="lg:mb-16 max-w-4xl mx-auto lg:pt-20 flex justify-center" style={{ position: 'relative', zIndex: 2 }}>
               <div className="px-4">
                 {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
                 <h1 className="mt-8 lg:mt-8 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
@@ -58,7 +58,7 @@ function Home() {
                 <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
                   Plan your perfect holiday with your personalized guide.
                 </h2>
-                <FormReport />
+                <FormInput />
               </div>
             </div>
           </div>
