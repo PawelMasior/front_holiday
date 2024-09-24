@@ -1,0 +1,92 @@
+[
+    {
+      "name": "🗽 Attractions",
+      "checked": true,
+      "focus": [
+        { "name": "🏛️ Museums", "checked": false },
+        { "name": "⛪ Temples", "checked": false },
+        { "name": "🛍️ Shopping", "checked": false },
+        { "name": "📸 Scenic Spots", "checked": false },
+        { "name": "⛩️ Historical Sites", "checked": false },
+        { "name": "🖼️ Art", "checked": false },
+        { "name": "🔬 Science", "checked": false },
+        { "name": "🧒 For Children", "checked": false }
+      ]
+    },
+    {
+      "name": "🍽️ Restaurants",
+      "checked": true,
+      "focus": [
+        { "name": "🥣 Local Cuisine", "checked": false },
+        { "name": "🌾 Gluten-Free", "checked": false },
+        { "name": "🥗 Vegan", "checked": false },
+        { "name": "🥦 Vegetarian", "checked": false },
+        { "name": "🥩 Steaks", "checked": false },
+        { "name": "🍣 Sushi", "checked": false },
+        { "name": "🍝 Italian", "checked": false },
+        { "name": "🥡 Chinese", "checked": false },
+        { "name": "✨ Michelin Stars", "checked": false }
+      ]
+    },
+    {
+      "name": "🎉 Activity",
+      "checked": true,
+      "focus": [
+        { "name": "🕺 Guided Tours", "checked": false },
+        { "name": "🎆 Festivals", "checked": false },
+        { "name": "🎶 Concerts", "checked": false },
+        { "name": "⚽ Sport Games", "checked": false },
+        { "name": "🔮 Exhibitions", "checked": false },
+        { "name": "👩🏻‍🍳 Cooking Classes", "checked": false },
+        { "name": "🕵️‍♀️ Escape Rooms", "checked": false },
+        { "name": "🍷 Wine Tours", "checked": false },
+        { "name": "💻 Digital Nomad", "checked": false },
+        { "name": "💆‍♀️ Spa", "checked": false },
+        { "name": "🧘 Yoga", "checked": false },
+        { "name": "🏋️‍♂️ Gym", "checked": false },
+        { "name": "❤️ Romantic", "checked": false }
+      ]
+    },
+    {
+      "name": "🏞️ Beyond the City",
+      "checked": false,
+      "focus": [
+        { "name": "🏕️ Nature", "checked": false },
+        { "name": "🚶 Hiking", "checked": false },
+        { "name": "🚲 Biking", "checked": false },
+        { "name": "🏖️ Beach", "checked": false }
+      ]
+    },
+    {
+      "name": "🍸 Nightlife",
+      "checked": false,
+      "focus": [
+        { "name": "🥂 Bars", "checked": false },
+        { "name": "🎶 Live Music", "checked": false },
+        { "name": "🎧 Nightclubs", "checked": false },
+        { "name": "🕺 Dancing", "checked": false },
+        { "name": "🎤 Karaoke", "checked": false }
+      ]
+    },
+    {
+      "name": "🚍 Transportation",
+      "checked": false,
+      "focus": [
+        { "name": "🚅 Metro", "checked": false },
+        { "name": "🚍 Bus", "checked": false },
+        { "name": "🚕 Taxi", "checked": false },
+        { "name": "🚴 Bike", "checked": false },
+        { "name": "🛴 Scooter", "checked": false }
+      ]
+    },
+    {
+      "name": "🛡️ Safety & Health",
+      "checked": false,
+      "focus": [
+        { "name": "👮🏻 Safety", "checked": false },
+        { "name": "🚑 Emergency", "checked": false },
+        { "name": "😷 COVID-19", "checked": false }
+      ]
+    }
+  ]
+  

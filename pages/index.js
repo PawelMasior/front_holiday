@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Layout from "../components/layout/Layout";
 import partnerships from '../components/sources.json';
-import FormInput from '../components/FormInput'
+import FormInput from '../components/FormInput_v2'
 
 const reportExamples = [
   { "ttl": '☀️ Weather', "sub": "Adjust to do list to weather forecasts." },
