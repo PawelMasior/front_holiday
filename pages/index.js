@@ -21,7 +21,7 @@ const reportSamples = [
     url: 'url(/assets/imgs/backgrounds/napoli.jpg)',
   },
   {
-    title: "🍇 Mersellie, France",
+    title: "🍷 Mersellie, France",
     url: 'url(/assets/imgs/backgrounds/marsellie.jpg)',
   },
   {
@@ -164,7 +164,7 @@ function Home() {
             </div>
           </div>
           <div className="bg-gradient-to-t from-white via-white to-white border-b-2 border-blue-200">
-          <div className="container mx-auto">
+          <div className="max-w-5xl  mx-auto">
               <div className="max-w-6xl mx-auto">
                 <div className={"px-4 pb-16 lg:mt-4 hidden lg:block flex flex-wrap lg:flex-nowrap"}>
                 <p className={"text-right text-lg lg:text-xl text-stone-800 font-bold wow animate__animated animate__fadeIn"} data-wow-delay=".3s">

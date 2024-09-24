@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const Header = ({ handleHidden }) => {
@@ -22,42 +22,40 @@ const Header = ({ handleHidden }) => {
         <header className={`bg-transparent sticky-bar mt-4 ${scroll ? "stick" : ""}`}>
             <div className="container bg-transparent">
                 <nav className="bg-transparent flex justify-between items-center py-3">
-                    <Link href="/">
-                        <a className="leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
-                            <p className="lg:pr-0 lg:text-2xl text-lg font-semibold text-stone-900">
-                            🧭 Dalongo
-                            </p>
-                        </a>
-                    </Link>
+                    <a href="/" className="leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
+                        <p className="lg:pr-0 lg:text-2xl text-lg font-semibold text-stone-900">
+                        🧭 Dalongo
+                        </p>
+                    </a>
                     <ul className="px-10 hidden lg:flex lg:items-center lg:w-auto lg:space-x-16 list-none">
                         <li className="pt-4 pb-4 group relative has-child">
-                            <Link href="#">
+                            <a href="#">
                                 <a className="text-lg font-semibold text-slate-800 hover:text-blueGray-500 duration-500">About Us</a>
-                            </Link>
+                            </a>
                             <ul className="drop-down-menu min-w-200">
                                 <li>
-                                    <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">🗿 placeholder_1</a>
-                                    </Link>
+                                    <a href="/contact" className="menu-sub-item text-base text-stone-800 hover:text-stone-600 font-bold">
+                                        🗿 placeholder_2
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">🗿 placeholder_2</a>
-                                    </Link>
+                                    <a href="/contact" className="menu-sub-item text-base text-stone-800 hover:text-stone-600 font-bold">
+                                        🗿 placeholder_2
+                                    </a>
                                 </li>
                                 <li>
-                                    <Link href="/contact">
-                                        <a className="menu-sub-item text-sm text-slate-700 hover:text-blueGray-500">🗿 placeholder_3</a>
-                                    </Link>
+                                    <a href="/contact" className="menu-sub-item text-base text-stone-800 hover:text-stone-600 font-bold">
+                                        🗿 placeholder_2
+                                    </a>
                                 </li>
                             </ul>
                         </li>
                         <li className="pt-4 pb-4">
-                            <Link href="/contact">
+                            <a href="/contact">
                                 <a className=" bg-gradient-to-tr from-blue-600 via-blue-500 to-blue-400 text-white font-bold hover-up-2 text-base duration-500 border-2 border-stone-950 px-4 py-2 rounded shadow-white shadow-lg">
                                     🔐 Login
                                 </a>
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <div className="lg:hidden">
