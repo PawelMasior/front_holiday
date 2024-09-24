@@ -72,8 +72,8 @@ function Home() {
                   🧭 Dalongo
                 </h1>
                 <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
-                Our AI gathers real-time data based on your preferences to provide personalized guide info.
-                Dalongo helps you in time saving on planning, focuses on what matters most, and discovers new things.
+                Our AI gathers real-time data based on your preferences to provide you personalized guide book.
+                Dalongo helps you in time saving on trip planning, focuses on what matters most, and discovers new things.
                 </p>
                 <p className="pt-1 text-base lg:text-base text-stone-900 text-justify">
                 </p>
