@@ -55,7 +55,7 @@ function Home() {
                 <h1 className="mt-8 lg:mt-8 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
                 🗺️ Plan Less, Explore More.
                 </h1>
-                <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
+                <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-900">
                   Plan your perfect holiday with your personalized guide.
                 </h2>
                 <FormInput />
@@ -90,9 +90,9 @@ function Home() {
               </div>
               <div className="hidden lg:block relative inset-0 w-1/3 ml-auto">
                 <div className="flex items-center h-full wow animate__animated animate__fadeIn animated" data-wow-delay=".2s">
-                  <img className="absolute top-0 left-0 w-40 ml-0 -mt--4 h-[200px]" src="/assets/imgs/elements/blob-tear-borrower.svg" />
-                  <img className="absolute bottom-0 right-0 w-40 -mb-0 h-[200px]" src="/assets/imgs/elements/blob-tear-investor.svg" />
-                  <img className="rounded-3xl lg:max-w-lg lg:max-h-lg mx-auto h-[280px] relative mx-auto" src="/img/world_5.webp"/>
+                  <img className="absolute opacity-20 top-0 left-0 w-40 ml-0 -mt--4 h-[200px]" src="/assets/imgs/elements/blob-tear-borrower.svg" />
+                  <img className="absolute opacity-20 bottom-0 right-0 w-40 -mb-0 h-[200px]" src="/assets/imgs/elements/blob-tear-investor.svg" />
+                  <img className=" lg:max-w-lg lg:max-h-lg mx-auto h-[220px] relative mx-auto" src="/img/world_7.svg"/>
                 </div>
               </div>   
             </div>
