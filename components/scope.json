@@ -41,7 +41,6 @@
       { "name": "🔮 Exhibitions", "checked": false },
       { "name": "👩🏻‍🍳 Cooking Classes", "checked": false },
       { "name": "🕵️‍♀️ Escape Rooms", "checked": false },
-      { "name": "💻 Digital Nomad", "checked": false },
       { "name": "💆‍♀️ Spa", "checked": false },
       { "name": "🧘 Yoga", "checked": false },
       { "name": "🏋️‍♂️ Gym", "checked": false },
@@ -69,6 +68,7 @@
     "name": "📌Facilities",
     "checked": false,
     "focus": [
+      { "name": "💻 Digital Nomad", "checked": false },
       { "name": "🚌 Public Transport", "checked": false },
       { "name": "🚕 Taxi", "checked": false },
       { "name": "🚴 Bike Rental", "checked": false },
