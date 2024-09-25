@@ -10,8 +10,8 @@ const Footer = () => {
                             <p className="text-center lg:text-left text-stone-900 font-bold text-xl lg:text-2xl">
                                 🧭 Dalongo
                             </p>
-                            <p className="pt-4 lg:pl-10 lg:max-w-full lg:mx-0 lg:text-lg text-stone-900 font-bold">
-                                Plan Less, Explore More.
+                            <p className="pt-4 lg:pl-2 lg:max-w-full lg:mx-0 lg:text-lg text-stone-900 font-bold">
+                                Your Plan, Your Experience.
                             </p>
                         </a>
                     </div>

@@ -25,7 +25,7 @@ const Data = () => {
                     <div className="px-4">
                         {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
                         <h1 className="mt-8 lg:mt-8 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
-                        🗺️ Plan Less, Explore More.
+                        🗺️ Your Plan, Your Experience.
                         </h1>
                         <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-700">
                         Plan your perfect holiday with your personalized guide.

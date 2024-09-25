@@ -126,7 +126,7 @@ function Home() {
               <div className="pt-5 lg:pt-10 pb-16 px-4 text-center">
                 <div className="text-4xl lg:text-6xl">🛫</div>
                 <h1 className="text-xl lg:text-4xl text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
-                  Plan Less, Explore More.
+                Your Plan, Your Experience.
                 </h1>
                 <h2 className="hidden lg:block pt-2 text-base lg:text-xl text-stone-700">
                   Plan your perfect holiday with your personalized guide.

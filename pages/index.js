@@ -54,10 +54,10 @@ function Home() {
               <div className="px-4">
                 {/* <div className="text-4xl lg:text-6xl text-center">🗺️</div> */}
                 <h1 className="mt-8 lg:mt-8 text-2xl lg:text-4xl text-center text-stone-800 font-bold lg:leading-normal animate__animated animate__fadeIn">
-                🗺️ Plan Less, Explore More.
+                🗺️ Your Plan, Your Experience.
                 </h1>
-                <h2 className="hidden lg:block pt-4 text-base text-center lg:text-xl text-stone-900">
-                  Plan your perfect holiday with your personalized guide.
+                <h2 className="hidden lg:block pt-4 text-base text-center lg:text-2xl text-stone-900">
+                  Explore places with your personalized guidebook.
                 </h2>
                 <FormInput />
               </div>
@@ -73,8 +73,10 @@ function Home() {
                   🧭 Dalongo
                 </h1>
                 <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
-                Our AI gathers real-time data based on your preferences to provide you personalized guide book.
-                Dalongo helps you in time saving on trip planning, focuses on what matters most, and discovers new things.
+                Our AI gathers real-time data based on your preferences to provide tailored for you information.
+                </p>
+                <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
+                We want to help you to save time on trip planning; so you can focus on what matters most discover new things!
                 </p>
                 <p className="pt-1 text-base lg:text-base text-stone-900 text-justify">
                 </p>
