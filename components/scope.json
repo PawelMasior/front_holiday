@@ -47,6 +47,7 @@
       { "name": "🎶 Live Music", "checked": false },
       { "name": "🎤 Karaoke", "checked": false },
       { "name": "🍸 Nightlife", "checked": false },
+      { "name": "👨‍👩‍👧‍👧 Family Friendly", "checked": false },
       { "name": "❤️ Romantic", "checked": false }
     ]
   },
