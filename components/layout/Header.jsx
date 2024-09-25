@@ -24,7 +24,7 @@ const Header = ({ handleHidden }) => {
                 <nav className="bg-transparent flex justify-between items-center py-3">
                     <a href="/" className="leading-none wow animate__animated animate__fadeIn animated hover-up-2 duration-500">
                         <p className="lg:pr-0 lg:text-2xl text-lg font-semibold text-stone-900">
-                        🧭 Dalongo
+                        🧭 Planepy | Dalongo | Plandada
                         </p>
                     </a>
                     <ul className="px-10 hidden lg:flex lg:items-center lg:w-auto lg:space-x-16 list-none">

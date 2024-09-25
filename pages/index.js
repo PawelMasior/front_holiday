@@ -9,7 +9,7 @@ const reportExamples = [
   // { "ttl": '🎉 Holidays', "sub": "Check for local festivals in the area." },
   { "ttl": '⭐ Reviews', "sub": "Verify review to select only the best options." },
   { "ttl": '🍽️ Diet', "sub": "Adjust restaurant list to your eating preferences." },
-  { "ttl": '🐉 Language', "sub": "Internet research is done in local language." },
+  { "ttl": '🐉 Language', "sub": "Internet research is irrelevant to local language." },
 ];
 
 const reportSamples = [
@@ -73,10 +73,10 @@ function Home() {
                   🧭 Dalongo
                 </h1>
                 <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
-                Our AI gathers real-time data based on your preferences to provide tailored for you information.
+                Our AI gathers real-time data based on your preferences to provide you your personalized guidebook.
                 </p>
                 <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
-                We want to help you to save time on trip planning; so you can focus on what matters most discover new things!
+                We want to help you to save time on any trip planning; so you can focus on what matters most and discover new things!
                 </p>
                 <p className="pt-1 text-base lg:text-base text-stone-900 text-justify">
                 </p>
@@ -109,7 +109,7 @@ function Home() {
                 🗺️ Plan Less, Explore More
                 </h3>
                 <p className="pt-2 text-base lg:text-base text-stone-900 text-justify">
-                See sample report for any place in the world.
+                Examples of presonalized guidebooks from any place in the world.
                 </p>
             </div>
             <div className="pt-6 flex flex-wrap">
