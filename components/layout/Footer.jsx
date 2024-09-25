@@ -28,12 +28,15 @@ const Footer = () => {
                         </div>
                         <div className="w-full lg:w-1/3 px-3 mb-8 lg:mb-0">
                             <p className="mb-2 lg:mb-4 lg:text-lg font-bold text-stone-800">Documents</p>
+                            <div className="flex flex-wrap flex-col">
                             <a href="/document-terms-of-use" className="text-sm lg:text-sm font-medium text-stone-800 hover:text-stone-900 leading-relaxed">
                                 Terms of Use
                             </a>
                             <a href="/document-privacy-policy" className="text-sm lg:text-sm font-medium text-stone-800 hover:text-stone-900 leading-relaxed">
                                 Privacy Policy
                             </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>

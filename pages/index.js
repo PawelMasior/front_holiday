@@ -149,13 +149,13 @@ function Home() {
                   <div key={index} className="flex flex-wrap">
                     <a href={item.href} className="pb-4 flex flex-col">
                       <img
-                        style={{ height: `30px` }}
+                        style={{ height: `28px` }}
                         className="block lg:hidden px-2 py-2"
                         src={item.src}
                         alt=""
                       />
                       <img
-                        style={{ height: `50px` }}
+                        style={{ height: `40px` }}
                         className="hidden lg:block px-6 py-2"
                         src={item.src}
                         alt=""
