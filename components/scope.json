@@ -31,11 +31,11 @@
     ]
   },
   {
-    "name": "🎉 Activity",
+    "name": "🤸🏼 Activity",
     "checked": true,
     "focus": [
       { "name": "🕺 Guided Tours", "checked": false },
-      { "name": "🎆 Festivals", "checked": false },
+      { "name": "🎉 Festivals", "checked": false },
       { "name": "🎶 Concerts", "checked": false },
       { "name": "⚽ Sport Games", "checked": false },
       { "name": "🔮 Exhibitions", "checked": false },
@@ -60,7 +60,7 @@
       { "name": "🌄 National Parks", "checked": false },
       { "name": "🏔️ Hiking", "checked": false },
       { "name": "🏞️ Lakes", "checked": false },
-      { "name": "🏖️ Beach", "checked": false },
+      { "name": "🏖️ Beaches", "checked": false },
       { "name": "🚲 Biking", "checked": false },
       { "name": "🍷 Wine Tours", "checked": false }
     ]
