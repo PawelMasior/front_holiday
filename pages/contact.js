@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Layout from '../components/layout/Layout';
-import ContactForm from "../components/ContactForm";
-import RecaptchaProvider from "../components/RecaptchaProvider";
+import ContactForm from "../components/elements/ContactForm";
+import RecaptchaProvider from "../components/elements/RecaptchaProvider";
 
 const Index = () => {
   return (

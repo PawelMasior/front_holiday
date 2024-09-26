@@ -3,7 +3,7 @@ import Layout from '../components/layout/Layout';
 import {SocialIcon} from "react-social-icons";
 import Link from "next/link"
 import ContactForm from "./ContactForm";
-import RecaptchaProvider from "./RecaptchaProvider";
+import RecaptchaProvider from "./elements/RecaptchaProvider";
 
 const Contact = () => {
   return (

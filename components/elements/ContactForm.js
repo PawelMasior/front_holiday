@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import React, {useCallback, useState} from "react";
-import contactScope from "./const/contactScope";
-import Button from "./elements/Button";
+import contactScope from "../const/contactScope";
+import Button from "./Button";
 import {toast} from "react-toastify";
-import contactMessages from "./const/contactMessages";
+import contactMessages from "../const/contactMessages";
 import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
-import {validateEmail} from "../utils";
+import {validateEmail} from "../../utils";
 
 function ClientForm() {
   const [loading, setLoading] = useState(false)
